@@ -1,6 +1,6 @@
 <svg width="1200" height="540" viewBox="0 0 1200 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Adhvik Rayaprolu football-inspired developer profile</title>
-  <desc id="desc">A cinematic horizontal player profile with a three-dimensional football pitch, animated ball, and concise information about Adhvik's work in AI, product engineering, and applied research.</desc>
+  <desc id="desc">A cinematic horizontal player profile with a perspective football pitch, a correctly constructed goal, and a ball rolling toward the net.</desc>
   <defs>
     <linearGradient id="stadium" x1="40" y1="18" x2="1128" y2="532" gradientUnits="userSpaceOnUse">
       <stop stop-color="#101915"/>
@@ -11,14 +11,6 @@
       <stop stop-color="#4D8A5F"/>
       <stop offset="0.5" stop-color="#21683E"/>
       <stop offset="1" stop-color="#0B492B"/>
-    </linearGradient>
-    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#FFFFFF" stop-opacity="0.15"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#E8D495"/>
-      <stop offset="1" stop-color="#B99D59"/>
     </linearGradient>
     <radialGradient id="ball" cx="0" cy="0" r="1" gradientTransform="translate(-9 -12) rotate(48) scale(39)">
       <stop stop-color="#FFFFFF"/>
@@ -38,26 +30,22 @@
     <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
       <feGaussianBlur stdDeviation="11"/>
     </filter>
-    <filter id="cardShadow" x="-20%" y="-30%" width="150%" height="180%">
-      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000000" flood-opacity="0.32"/>
-    </filter>
     <filter id="ballShadow" x="-60%" y="-80%" width="220%" height="260%">
       <feGaussianBlur stdDeviation="5"/>
     </filter>
     <style>
-      .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-      .micro { fill: #D9E2DD; font-size: 12px; font-weight: 760; letter-spacing: 2px; }
-      .label { fill: #B8C7BF; font-size: 13px; font-weight: 650; }
-      .value { fill: #FFFFFF; font-size: 16px; font-weight: 760; }
+      .sans { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; }
+      .display { font-family: "DIN Condensed", "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif; font-stretch: condensed; }
+      .micro { fill: #D9E2DD; font-size: 12px; font-weight: 700; letter-spacing: 0; }
+      .label { fill: #9FB0A7; font-size: 12px; font-weight: 600; }
+      .value { fill: #FFFFFF; font-size: 16px; font-weight: 700; }
       .pitch-line { fill: none; stroke: #F5FAF6; stroke-width: 2; stroke-opacity: 0.7; }
-      .route { fill: none; stroke: #E8D495; stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: 5 11; animation: route 2.6s linear infinite; }
+      .route { fill: none; stroke: #E8D495; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 5 12; animation: route 2.8s linear infinite; }
       .sweep { animation: sweep 7s ease-in-out infinite; }
-      .pulse { animation: pulse 2.6s ease-in-out infinite; }
       @keyframes route { to { stroke-dashoffset: -32; } }
       @keyframes sweep { 0%, 12% { transform: translateX(-260px); opacity: 0; } 38% { opacity: 0.2; } 66%, 100% { transform: translateX(760px); opacity: 0; } }
-      @keyframes pulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 0.85; } }
       @media (prefers-reduced-motion: reduce) {
-        .route, .sweep, .pulse { animation: none; }
+        .route, .sweep { animation: none; }
       }
     </style>
   </defs>
@@ -95,65 +83,70 @@
   <path d="M657 397L638 453H1104L1082 397" class="pitch-line"/>
   <path d="M839 397C789 417 775 439 778 453M900 397C952 417 968 439 967 453" class="pitch-line"/>
 
-  <g opacity="0.88">
-    <path d="M759 143L779 95H952L970 143" stroke="#EFF6F1" stroke-width="4"/>
-    <path d="M779 95V143M952 95V143" stroke="#EFF6F1" stroke-width="4"/>
-    <path d="M779 96H952V143H759L779 96Z" fill="url(#net)"/>
+  <g opacity="0.94">
+    <path d="M804 78H916L940 94H782L804 78Z" fill="url(#net)" stroke="#DCE8E0" stroke-opacity="0.42"/>
+    <path d="M804 78V126L782 142V94L804 78Z" fill="url(#net)" stroke="#DCE8E0" stroke-opacity="0.34"/>
+    <path d="M916 78V126L940 142V94L916 78Z" fill="url(#net)" stroke="#DCE8E0" stroke-opacity="0.34"/>
+    <path d="M804 126H916L940 142H782L804 126Z" fill="url(#net)" stroke="#DCE8E0" stroke-opacity="0.34"/>
+    <path d="M804 78H916V126H804V78Z" fill="url(#net)" opacity="0.7"/>
+    <path d="M782 142V94H940V142" fill="none" stroke="#F4F7F5" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M782 94L804 78H916L940 94M804 78V126M916 78V126M804 126H916" fill="none" stroke="#DDE7E1" stroke-width="2" stroke-opacity="0.82"/>
   </g>
 
-  <path d="M758 421C820 396 887 380 982 397" class="route"/>
+  <path d="M982 426C963 372 918 260 860 142" class="route"/>
 
-  <ellipse cx="979" cy="430" rx="31" ry="10" fill="#021009" fill-opacity="0.66" filter="url(#ballShadow)">
-    <animate attributeName="rx" values="31;23;31" dur="3.6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.66;0.32;0.66" dur="3.6s" repeatCount="indefinite"/>
-    <animate attributeName="cx" values="979;920;979" dur="3.6s" repeatCount="indefinite"/>
-  </ellipse>
   <g>
-    <animateMotion path="M0 0 C-26 -54 -70 -70 -59 0 C-48 -32 -17 -38 0 0" dur="3.6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
-    <g transform="translate(979 400)">
+    <animateMotion path="M0 0 C-20 -62 -66 -188 -122 -284" dur="5.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.72 0.34 1"/>
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.86;0.94;1" dur="5.2s" repeatCount="indefinite"/>
+    <g transform="translate(982 439)">
       <g>
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.6s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="scale" values="1;0.32" dur="5.2s" repeatCount="indefinite"/>
+        <ellipse rx="30" ry="8" fill="#021009" fill-opacity="0.58" filter="url(#ballShadow)"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <animateMotion path="M0 0 C-20 -62 -66 -188 -122 -284" dur="5.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.72 0.34 1"/>
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.86;0.94;1" dur="5.2s" repeatCount="indefinite"/>
+    <g transform="translate(982 419)">
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="1;0.32" dur="5.2s" repeatCount="indefinite"/>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-1080" dur="5.2s" repeatCount="indefinite"/>
         <circle r="27" fill="url(#ball)" stroke="#FFFFFF" stroke-opacity="0.72"/>
         <path d="M-5 -9L5 -15L15 -7L11 5L-2 8L-10 -1L-5 -9Z" fill="#17211B"/>
         <path d="M5 -15L8 -25M15 -7L25 -4M11 5L18 17M-2 8L-9 24M-10 -1L-24 -8" stroke="#38443D" stroke-width="2"/>
         <path d="M-18 -18L-11 -8M19 -17L13 -8M24 10L16 9M-18 17L-10 9" stroke="#78817C" stroke-width="1.5"/>
         <ellipse cx="-9" cy="-12" rx="7" ry="4" fill="#FFFFFF" fill-opacity="0.5" transform="rotate(-30 -9 -12)"/>
+        </g>
       </g>
     </g>
   </g>
 
   <g class="sans">
-    <g transform="translate(58 55)">
-      <rect width="158" height="30" rx="15" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity="0.14"/>
-      <circle cx="17" cy="15" r="4" fill="#DCC47A" class="pulse"/>
-      <text x="31" y="20" class="micro">PLAYER PROFILE</text>
+    <g transform="translate(58 52)">
+      <rect width="3" height="21" fill="#DCC47A"/>
+      <text x="17" y="16" class="micro">01 / PLAYER PROFILE</text>
     </g>
 
-    <text x="58" y="151" fill="#FFFFFF" font-size="54" font-weight="840">Adhvik</text>
-    <text x="58" y="207" fill="#FFFFFF" font-size="54" font-weight="840">Rayaprolu</text>
-    <rect x="58" y="230" width="88" height="4" rx="2" fill="url(#gold)"/>
+    <text x="55" y="150" class="display" fill="#FFFFFF" font-size="62" font-weight="700">ADHVIK</text>
+    <text x="55" y="208" class="display" fill="#FFFFFF" font-size="62" font-weight="700">RAYAPROLU</text>
+    <path d="M58 231H489" stroke="#DCC47A" stroke-width="2"/>
 
-    <text x="58" y="275" fill="#EAF0EC" font-size="20" font-weight="720">Math + CS at UIUC</text>
-    <text x="58" y="309" fill="#B8C7BF" font-size="16" font-weight="520">Building intelligent systems that move</text>
-    <text x="58" y="332" fill="#B8C7BF" font-size="16" font-weight="520">from research to reliable products.</text>
+    <text x="58" y="271" class="display" fill="#EAF0EC" font-size="20" font-weight="700">SOFTWARE ENGINEER / RESEARCHER</text>
+    <text x="58" y="308" fill="#C6D1CB" font-size="16" font-weight="600">Mathematics + Computer Science at UIUC</text>
+    <text x="58" y="337" fill="#9FB0A7" font-size="15" font-weight="500">Voice agents, full-stack products, and applied LLM research.</text>
 
-    <g transform="translate(58 374)" filter="url(#cardShadow)">
-      <rect width="474" height="91" rx="10" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity="0.12"/>
-      <path d="M158 18V73M316 18V73" stroke="#FFFFFF" stroke-opacity="0.12"/>
-      <text x="18" y="31" class="label">AI SYSTEMS</text>
-      <text x="18" y="58" class="value">Voice + agents</text>
-      <text x="176" y="31" class="label">PRODUCT</text>
-      <text x="176" y="58" class="value">Full-stack apps</text>
-      <text x="334" y="31" class="label">RESEARCH</text>
-      <text x="334" y="58" class="value">LLMs + data</text>
+    <g transform="translate(58 381)">
+      <path d="M0 0H474M0 82H474M158 14V68M316 14V68" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <text x="0" y="29" class="label">01  AI SYSTEMS</text>
+      <text x="0" y="57" class="value">Voice + agents</text>
+      <text x="176" y="29" class="label">02  PRODUCT</text>
+      <text x="176" y="57" class="value">Full-stack apps</text>
+      <text x="334" y="29" class="label">03  RESEARCH</text>
+      <text x="334" y="57" class="value">LLMs + data</text>
     </g>
 
-    <text x="58" y="503" fill="#91A59A" font-size="13" font-weight="620">PYTHON  /  FASTAPI  /  REACT  /  POSTGRESQL  /  RAG</text>
-
-    <g transform="translate(758 173)" filter="url(#cardShadow)">
-      <rect width="193" height="55" rx="8" fill="#0C1B13" fill-opacity="0.84" stroke="#FFFFFF" stroke-opacity="0.16"/>
-      <text x="14" y="21" class="micro" fill="#DCC47A">CURRENT FORM</text>
-      <text x="14" y="42" fill="#FFFFFF" font-size="14" font-weight="700">AI + product engineering</text>
-    </g>
+    <text x="58" y="503" fill="#91A59A" font-size="12" font-weight="600">PYTHON / FASTAPI / REACT / POSTGRESQL / RAG</text>
   </g>
 </svg>
