@@ -1,6 +1,6 @@
 <svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Adhvik Rayaprolu profile banner</title>
-  <desc id="desc">A red, dark red, and blue landing banner introducing Adhvik Rayaprolu as a full-stack builder and AI product explorer.</desc>
+  <desc id="desc">A red, dark red, and blue landing banner introducing Adhvik Rayaprolu as a UIUC Math and Computer Science student building AI and full-stack systems.</desc>
   <defs>
     <linearGradient id="heroGradient" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#EF0107"/>
@@ -25,15 +25,15 @@
   <path d="M92 86H1108V334H92V86Z" stroke="#FFFFFF" stroke-opacity="0.42" stroke-width="2"/>
   <text x="950" y="264" text-anchor="middle" fill="#FFFFFF" opacity="0.12" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="190" font-weight="900">AR</text>
   <g filter="url(#softShadow)">
-    <text x="140" y="142" fill="#FFFFFF" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700">FULL-STACK BUILDER</text>
+    <text x="140" y="142" fill="#FFFFFF" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700">MATH + CS @ UIUC</text>
     <text x="140" y="218" fill="#FFFFFF" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="62" font-weight="800">ADHVIK RAYAPROLU</text>
-    <text x="140" y="276" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="25" font-weight="600">AI products, useful systems, social good</text>
+    <text x="140" y="276" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="25" font-weight="600">AI systems, full-stack products, research tools</text>
   </g>
   <path d="M120 316H760" stroke="url(#lineGradient)" stroke-width="3"/>
   <g fill="#FFFFFF" opacity="0.9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="700">
-    <text x="142" y="350">TYPESCRIPT</text>
-    <text x="314" y="350">PYTHON</text>
-    <text x="438" y="350">JAVA</text>
+    <text x="142" y="350">PYTHON</text>
+    <text x="276" y="350">REACT</text>
+    <text x="390" y="350">FASTAPI</text>
     <text x="536" y="350">OPENAI API</text>
   </g>
 </svg>

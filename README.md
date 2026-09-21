@@ -1,45 +1,40 @@
 <p align="center">
-  <img src="./assets/profile-hero.svg" alt="Adhvik Rayaprolu - full-stack builder, AI product explorer, and technology for social good" width="100%">
+  <img src="./assets/profile-hero.svg" alt="Adhvik Rayaprolu - Math and Computer Science student building AI and full-stack systems" width="100%">
 </p>
 
 # Hi, I'm Adhvik.
 
-I build software that turns practical ideas into useful tools. My work sits around full-stack applications, AI-assisted products, research-minded experimentation, and technology that helps people learn, connect, create, or make better decisions.
+I'm a Mathematics + Computer Science student at UIUC building AI systems, full-stack products, and research tools. I like work that turns messy real-world problems into usable software.
 
-## What I Do
+## Snapshot
 
-| Area | How I Think About It |
-| --- | --- |
-| Full-stack products | Build usable web and mobile experiences backed by reliable APIs and practical data flows. |
-| AI-enabled tools | Explore where language models, document workflows, and human-centered automation can make software more useful. |
-| Community technology | Design systems that help people organize around shared interests, learning, and collaboration. |
-| Research-driven building | Treat projects as a way to ask better questions, test assumptions, and improve the next version. |
+- B.S. Mathematics + Computer Science, University of Illinois Urbana-Champaign
+- AI Intern at Gnani.ai, building voice and chat agent backends with FastAPI, PydanticAI, MCP, STT/TTS, and PostgreSQL
+- Co-Founder and Developer at Zapp, building personal spending intelligence with Django, React, Python, Supabase, and ML
+- Undergraduate researcher with NCSA SPIN and Illinois Mathematics Lab, working on LLM architecture, RAG/tool-calling workflows, and sports analytics
 
-## Featured Work
+## Work
 
 | Project | What it is | Stack |
 | --- | --- | --- |
-| [Swave](https://github.com/adhvikrayaprolu/swave) | Music-focused app foundation with backend and frontend components. | TypeScript, Python |
-| [UIUC Skillshare](https://github.com/adhvikrayaprolu/uiuc-skillshare) | Campus skill-sharing platform for learning and collaboration. | TypeScript |
-| [GatherLink Web](https://github.com/adhvikrayaprolu/gather-link-web-app) | Interest-group management platform for communities. | Java, Spring Boot |
-| [GatherLink Mobile](https://github.com/adhvikrayaprolu/gather-link-mobile-app) | Android companion for groups, posts, and user interactions. | Java, Android |
-| [Chatbot App](https://github.com/adhvikrayaprolu/chatbot-app) | GPT-powered chatbot with document upload support. | Flask, HTML, OpenAI API |
+| [AstroGnani](https://astro.gnani.site/) | Live B2C AI astrology platform with streaming voice and chat agents. | Python, FastAPI, PydanticAI, PostgreSQL |
+| Zapp | Personal spending intelligence product for subscription value scores and recommendations. | Django, React, Python, Supabase |
+| [Chatbot App](https://github.com/adhvikrayaprolu/chatbot-app) | HR-focused chatbot with persistent conversations and RAG document-upload experiments. | Flask, OpenAI API |
+| [Skill vs Luck](https://github.com/adhvikrayaprolu/iml_skillvsluck) | Sports analytics research modeling 20+ years of European soccer outcomes. | Python, R, Data Analysis |
 
 ## Toolkit
 
 <p>
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-063672?style=for-the-badge&logo=typescript&logoColor=white">
   <img alt="Python" src="https://img.shields.io/badge/Python-DB0007?style=for-the-badge&logo=python&logoColor=white">
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-063672?style=for-the-badge&logo=javascript&logoColor=white">
   <img alt="Java" src="https://img.shields.io/badge/Java-EF0107?style=for-the-badge&logo=openjdk&logoColor=white">
-  <img alt="Spring Boot" src="https://img.shields.io/badge/Spring_Boot-063672?style=for-the-badge&logo=springboot&logoColor=white">
-  <img alt="Flask" src="https://img.shields.io/badge/Flask-DB0007?style=for-the-badge&logo=flask&logoColor=white">
+  <img alt="React" src="https://img.shields.io/badge/React-063672?style=for-the-badge&logo=react&logoColor=white">
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-DB0007?style=for-the-badge&logo=fastapi&logoColor=white">
+  <img alt="Django" src="https://img.shields.io/badge/Django-063672?style=for-the-badge&logo=django&logoColor=white">
   <img alt="OpenAI API" src="https://img.shields.io/badge/OpenAI_API-EF0107?style=for-the-badge&logo=openai&logoColor=white">
 </p>
-
-## What I'm Drawn To
-
-I like building things where the engineering has a clear human purpose: tools for learning, creativity, access, collaboration, and better decision-making. I care about product feel, backend reliability, and the small choices that make technology easier to trust.
 
 ## Connect
 
 - GitHub: [@adhvikrayaprolu](https://github.com/adhvikrayaprolu)
+- LinkedIn: [adhvik-rayaprolu](https://linkedin.com/in/adhvik-rayaprolu-9a214b327)
