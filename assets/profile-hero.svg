@@ -1,152 +1,176 @@
-<svg width="1200" height="540" viewBox="0 0 1200 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Adhvik Rayaprolu football-inspired developer profile</title>
-  <desc id="desc">A cinematic horizontal player profile with a perspective football pitch, a correctly constructed goal, and a ball rolling toward the net.</desc>
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Adhvik Rayaprolu portfolio starting lineup</title>
+  <desc id="desc">A horizontal football team sheet showing Adhvik's professional experience and selected repositories as a tactical lineup on a realistic green pitch with two goals.</desc>
   <defs>
-    <linearGradient id="stadium" x1="40" y1="18" x2="1128" y2="532" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#101915"/>
-      <stop offset="0.48" stop-color="#13271D"/>
-      <stop offset="1" stop-color="#07110C"/>
+    <linearGradient id="stadium" x1="24" y1="20" x2="1160" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111B16"/>
+      <stop offset="0.55" stop-color="#0B1711"/>
+      <stop offset="1" stop-color="#06100B"/>
     </linearGradient>
-    <linearGradient id="pitch" x1="890" y1="144" x2="876" y2="500" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#4D8A5F"/>
-      <stop offset="0.5" stop-color="#21683E"/>
-      <stop offset="1" stop-color="#0B492B"/>
+    <linearGradient id="pitch" x1="570" y1="110" x2="1140" y2="490" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#397B4D"/>
+      <stop offset="0.48" stop-color="#2E7145"/>
+      <stop offset="1" stop-color="#245F39"/>
     </linearGradient>
-    <radialGradient id="ball" cx="0" cy="0" r="1" gradientTransform="translate(-9 -12) rotate(48) scale(39)">
-      <stop stop-color="#FFFFFF"/>
-      <stop offset="0.62" stop-color="#E9EBE8"/>
-      <stop offset="1" stop-color="#9DA49F"/>
-    </radialGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(0 0) rotate(90) scale(1)">
-      <stop stop-color="#FFFFFF" stop-opacity="0.32"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="net" width="12" height="10" patternUnits="userSpaceOnUse" patternTransform="skewX(-12)">
-      <path d="M0 0H12M0 0V10" stroke="#E9F2EC" stroke-opacity="0.34" stroke-width="0.8"/>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#F1D98B"/>
+      <stop offset="1" stop-color="#C5A756"/>
+    </linearGradient>
+    <pattern id="grassGrain" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M2 18L5 7M8 18L10 3M14 18L16 9" stroke="#D7F1DE" stroke-opacity="0.045" stroke-width="1"/>
+      <path d="M5 15L3 5M12 18L13 8M17 14L16 2" stroke="#031B0C" stroke-opacity="0.055" stroke-width="1"/>
     </pattern>
-    <clipPath id="pitchClip">
-      <path d="M685 142H1032L1170 492H568L685 142Z"/>
-    </clipPath>
-    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
-      <feGaussianBlur stdDeviation="11"/>
+    <pattern id="net" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 0H10V10" stroke="#F4F7F5" stroke-opacity="0.5" stroke-width="0.8"/>
+    </pattern>
+    <filter id="pitchShadow" x="-12%" y="-20%" width="124%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.46"/>
     </filter>
-    <filter id="ballShadow" x="-60%" y="-80%" width="220%" height="260%">
-      <feGaussianBlur stdDeviation="5"/>
+    <filter id="playerShadow" x="-80%" y="-60%" width="260%" height="260%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#041009" flood-opacity="0.55"/>
     </filter>
     <style>
-      .sans { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; }
+      .body { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; }
       .display { font-family: "DIN Condensed", "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif; font-stretch: condensed; }
-      .micro { fill: #D9E2DD; font-size: 12px; font-weight: 700; letter-spacing: 0; }
-      .label { fill: #9FB0A7; font-size: 12px; font-weight: 600; }
-      .value { fill: #FFFFFF; font-size: 16px; font-weight: 700; }
-      .pitch-line { fill: none; stroke: #F5FAF6; stroke-width: 2; stroke-opacity: 0.7; }
-      .route { fill: none; stroke: #E8D495; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 5 12; animation: route 2.8s linear infinite; }
-      .sweep { animation: sweep 7s ease-in-out infinite; }
-      @keyframes route { to { stroke-dashoffset: -32; } }
-      @keyframes sweep { 0%, 12% { transform: translateX(-260px); opacity: 0; } 38% { opacity: 0.2; } 66%, 100% { transform: translateX(760px); opacity: 0; } }
-      @media (prefers-reduced-motion: reduce) {
-        .route, .sweep { animation: none; }
-      }
+      .pitch-line { fill: none; stroke: #F4F7F5; stroke-width: 2; stroke-opacity: 0.72; }
+      .eyebrow { fill: #CFDAD4; font-size: 12px; font-weight: 700; letter-spacing: 0; }
+      .small { fill: #98AAA0; font-size: 13px; font-weight: 600; letter-spacing: 0; }
+      .player-number { font-family: "DIN Condensed", "Arial Narrow", sans-serif; font-size: 13px; font-weight: 700; text-anchor: middle; }
+      .player-label { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; fill: #FFFFFF; font-size: 13px; font-weight: 700; text-anchor: middle; letter-spacing: 0; }
+      .formation-line { fill: none; stroke: #F4F7F5; stroke-width: 1; stroke-opacity: 0.16; stroke-dasharray: 4 8; }
     </style>
   </defs>
 
-  <rect width="1200" height="540" rx="24" fill="url(#stadium)"/>
-  <path d="M0 430C249 362 415 377 604 430C781 480 986 487 1200 421V540H0V430Z" fill="#06100B" fill-opacity="0.72"/>
-  <ellipse cx="894" cy="487" rx="334" ry="41" fill="#020805" fill-opacity="0.58" filter="url(#softShadow)"/>
+  <rect width="1200" height="600" rx="24" fill="url(#stadium)"/>
+  <path d="M0 472C174 425 348 427 522 474C736 532 982 535 1200 475V600H0V472Z" fill="#030A06" fill-opacity="0.5"/>
 
-  <g opacity="0.34">
-    <circle cx="721" cy="60" r="2" fill="#FFFFFF"/><circle cx="751" cy="70" r="1.5" fill="#FFFFFF"/>
-    <circle cx="789" cy="53" r="2" fill="#FFFFFF"/><circle cx="832" cy="68" r="1.5" fill="#FFFFFF"/>
-    <circle cx="874" cy="49" r="2" fill="#FFFFFF"/><circle cx="919" cy="64" r="1.5" fill="#FFFFFF"/>
-    <circle cx="964" cy="51" r="2" fill="#FFFFFF"/><circle cx="1009" cy="70" r="1.5" fill="#FFFFFF"/>
-    <circle cx="1051" cy="55" r="2" fill="#FFFFFF"/><circle cx="1093" cy="68" r="1.5" fill="#FFFFFF"/>
-  </g>
+  <g class="body">
+    <rect x="52" y="48" width="3" height="22" fill="#DCC47A"/>
+    <text x="69" y="65" class="eyebrow">PORTFOLIO LINEUP / 2026</text>
 
-  <g class="sweep" clip-path="url(#pitchClip)">
-    <path d="M500 86H640L912 540H742L500 86Z" fill="url(#glow)"/>
-  </g>
+    <text x="51" y="145" class="display" fill="#FFFFFF" font-size="61" font-weight="700">ADHVIK</text>
+    <text x="51" y="202" class="display" fill="#FFFFFF" font-size="61" font-weight="700">RAYAPROLU</text>
+    <path d="M54 226H496" stroke="#DCC47A" stroke-width="2"/>
 
-  <path d="M685 142H1032L1170 492H568L685 142Z" fill="url(#pitch)"/>
-  <g clip-path="url(#pitchClip)" opacity="0.18">
-    <path d="M604 404H1136L1164 474H581L604 404Z" fill="#D8F0DE"/>
-    <path d="M632 320H1103L1125 376H613L632 320Z" fill="#D8F0DE"/>
-    <path d="M657 246H1074L1090 289H643L657 246Z" fill="#D8F0DE"/>
-    <path d="M678 183H1048L1060 217H667L678 183Z" fill="#D8F0DE"/>
-  </g>
+    <text x="54" y="270" class="display" fill="#F2F5F3" font-size="21" font-weight="700">SOFTWARE ENGINEER / RESEARCHER</text>
+    <text x="54" y="307" fill="#C9D4CE" font-size="16" font-weight="600">Mathematics + Computer Science at UIUC</text>
+    <text x="54" y="339" fill="#98AAA0" font-size="15" font-weight="500">Building AI systems, full-stack products,</text>
+    <text x="54" y="362" fill="#98AAA0" font-size="15" font-weight="500">and research tools that ship.</text>
 
-  <path d="M685 142H1032L1170 492H568L685 142Z" class="pitch-line"/>
-  <path d="M635 290H1090" class="pitch-line"/>
-  <ellipse cx="862" cy="290" rx="68" ry="39" class="pitch-line"/>
-  <circle cx="862" cy="290" r="3" fill="#F5FAF6" fill-opacity="0.8"/>
-  <path d="M725 142L702 207H1060L1032 142" class="pitch-line"/>
-  <path d="M601 397H1133L1170 492H568L601 397Z" class="pitch-line"/>
-  <path d="M657 397L638 453H1104L1082 397" class="pitch-line"/>
-  <path d="M839 397C789 417 775 439 778 453M900 397C952 417 968 439 967 453" class="pitch-line"/>
+    <path d="M54 404H496" stroke="#FFFFFF" stroke-opacity="0.16"/>
+    <text x="54" y="435" class="eyebrow">LINEUP KEY</text>
 
-  <g opacity="0.94">
-    <path d="M804 78H916L940 94H782L804 78Z" fill="url(#net)" stroke="#DCE8E0" stroke-opacity="0.42"/>
-    <path d="M804 78V126L782 142V94L804 78Z" fill="url(#net)" stroke="#DCE8E0" stroke-opacity="0.34"/>
-    <path d="M916 78V126L940 142V94L916 78Z" fill="url(#net)" stroke="#DCE8E0" stroke-opacity="0.34"/>
-    <path d="M804 126H916L940 142H782L804 126Z" fill="url(#net)" stroke="#DCE8E0" stroke-opacity="0.34"/>
-    <path d="M804 78H916V126H804V78Z" fill="url(#net)" opacity="0.7"/>
-    <path d="M782 142V94H940V142" fill="none" stroke="#F4F7F5" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M782 94L804 78H916L940 94M804 78V126M916 78V126M804 126H916" fill="none" stroke="#DDE7E1" stroke-width="2" stroke-opacity="0.82"/>
-  </g>
-
-  <path d="M982 426C963 372 918 260 860 142" class="route"/>
-
-  <g>
-    <animateMotion path="M0 0 C-20 -62 -66 -188 -122 -284" dur="5.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.72 0.34 1"/>
-    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.86;0.94;1" dur="5.2s" repeatCount="indefinite"/>
-    <g transform="translate(982 439)">
-      <g>
-        <animateTransform attributeName="transform" type="scale" values="1;0.32" dur="5.2s" repeatCount="indefinite"/>
-        <ellipse rx="30" ry="8" fill="#021009" fill-opacity="0.58" filter="url(#ballShadow)"/>
-      </g>
+    <g transform="translate(57 469)">
+      <circle cx="8" cy="-10" r="4" fill="url(#gold)"/>
+      <path d="M-2 -4L4 -8H12L18 -4L14 3L12 0V14H4V0L2 3L-2 -4Z" fill="url(#gold)"/>
+      <text x="30" y="7" fill="#E8EEE9" font-size="14" font-weight="700">Experience</text>
     </g>
-  </g>
-  <g>
-    <animateMotion path="M0 0 C-20 -62 -66 -188 -122 -284" dur="5.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.72 0.34 1"/>
-    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.86;0.94;1" dur="5.2s" repeatCount="indefinite"/>
-    <g transform="translate(982 419)">
-      <g>
-        <animateTransform attributeName="transform" type="scale" values="1;0.32" dur="5.2s" repeatCount="indefinite"/>
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="0" to="-1080" dur="5.2s" repeatCount="indefinite"/>
-        <circle r="27" fill="url(#ball)" stroke="#FFFFFF" stroke-opacity="0.72"/>
-        <path d="M-5 -9L5 -15L15 -7L11 5L-2 8L-10 -1L-5 -9Z" fill="#17211B"/>
-        <path d="M5 -15L8 -25M15 -7L25 -4M11 5L18 17M-2 8L-9 24M-10 -1L-24 -8" stroke="#38443D" stroke-width="2"/>
-        <path d="M-18 -18L-11 -8M19 -17L13 -8M24 10L16 9M-18 17L-10 9" stroke="#78817C" stroke-width="1.5"/>
-        <ellipse cx="-9" cy="-12" rx="7" ry="4" fill="#FFFFFF" fill-opacity="0.5" transform="rotate(-30 -9 -12)"/>
-        </g>
-      </g>
-    </g>
-  </g>
-
-  <g class="sans">
-    <g transform="translate(58 52)">
-      <rect width="3" height="21" fill="#DCC47A"/>
-      <text x="17" y="16" class="micro">01 / PLAYER PROFILE</text>
+    <g transform="translate(205 469)">
+      <circle cx="8" cy="-10" r="4" fill="#F4F7F5"/>
+      <path d="M-2 -4L4 -8H12L18 -4L14 3L12 0V14H4V0L2 3L-2 -4Z" fill="#F4F7F5"/>
+      <text x="30" y="7" fill="#E8EEE9" font-size="14" font-weight="700">Repository / project</text>
     </g>
 
-    <text x="55" y="150" class="display" fill="#FFFFFF" font-size="62" font-weight="700">ADHVIK</text>
-    <text x="55" y="208" class="display" fill="#FFFFFF" font-size="62" font-weight="700">RAYAPROLU</text>
-    <path d="M58 231H489" stroke="#DCC47A" stroke-width="2"/>
+    <text x="54" y="548" class="small">PYTHON / FASTAPI / REACT / POSTGRESQL / RAG</text>
+  </g>
 
-    <text x="58" y="271" class="display" fill="#EAF0EC" font-size="20" font-weight="700">SOFTWARE ENGINEER / RESEARCHER</text>
-    <text x="58" y="308" fill="#C6D1CB" font-size="16" font-weight="600">Mathematics + Computer Science at UIUC</text>
-    <text x="58" y="337" fill="#9FB0A7" font-size="15" font-weight="500">Voice agents, full-stack products, and applied LLM research.</text>
+  <text x="570" y="77" class="display" fill="#F3F6F4" font-size="25" font-weight="700">2 - 3 - 2  /  CURRENT LINEUP</text>
+  <text x="1140" y="76" class="body small" text-anchor="end">EXPERIENCE + SELECTED WORK</text>
 
-    <g transform="translate(58 381)">
-      <path d="M0 0H474M0 82H474M158 14V68M316 14V68" stroke="#FFFFFF" stroke-opacity="0.18"/>
-      <text x="0" y="29" class="label">01  AI SYSTEMS</text>
-      <text x="0" y="57" class="value">Voice + agents</text>
-      <text x="176" y="29" class="label">02  PRODUCT</text>
-      <text x="176" y="57" class="value">Full-stack apps</text>
-      <text x="334" y="29" class="label">03  RESEARCH</text>
-      <text x="334" y="57" class="value">LLMs + data</text>
+  <g filter="url(#pitchShadow)">
+    <rect x="570" y="110" width="570" height="380" rx="3" fill="url(#pitch)"/>
+    <g opacity="0.17">
+      <rect x="570" y="110" width="71.25" height="380" fill="#D5EFDC"/>
+      <rect x="712.5" y="110" width="71.25" height="380" fill="#D5EFDC"/>
+      <rect x="855" y="110" width="71.25" height="380" fill="#D5EFDC"/>
+      <rect x="997.5" y="110" width="71.25" height="380" fill="#D5EFDC"/>
+    </g>
+    <rect x="570" y="110" width="570" height="380" fill="url(#grassGrain)"/>
+
+    <rect x="570" y="110" width="570" height="380" rx="3" class="pitch-line"/>
+    <path d="M855 110V490" class="pitch-line"/>
+    <circle cx="855" cy="300" r="58" class="pitch-line"/>
+    <circle cx="855" cy="300" r="3.5" fill="#F4F7F5" fill-opacity="0.8"/>
+
+    <rect x="570" y="198" width="92" height="204" class="pitch-line"/>
+    <rect x="570" y="249" width="42" height="102" class="pitch-line"/>
+    <circle cx="636" cy="300" r="3.5" fill="#F4F7F5" fill-opacity="0.8"/>
+    <path d="M662 250A58 58 0 0 1 662 350" class="pitch-line"/>
+
+    <rect x="1048" y="198" width="92" height="204" class="pitch-line"/>
+    <rect x="1098" y="249" width="42" height="102" class="pitch-line"/>
+    <circle cx="1074" cy="300" r="3.5" fill="#F4F7F5" fill-opacity="0.8"/>
+    <path d="M1048 250A58 58 0 0 0 1048 350" class="pitch-line"/>
+
+    <path d="M570 128A18 18 0 0 0 588 110M1122 110A18 18 0 0 0 1140 128M570 472A18 18 0 0 1 588 490M1122 490A18 18 0 0 1 1140 472" class="pitch-line"/>
+
+    <g>
+      <path d="M570 244L532 259V341L570 356Z" fill="url(#net)" stroke="#EAF0EC" stroke-opacity="0.7"/>
+      <path d="M570 244V356M570 244L532 259M570 356L532 341M532 259V341" stroke="#F7F9F8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M532 259L570 259M532 275L570 275M532 292L570 292M532 308L570 308M532 325L570 325M532 341L570 341" stroke="#F7F9F8" stroke-opacity="0.3"/>
+    </g>
+    <g>
+      <path d="M1140 244L1178 259V341L1140 356Z" fill="url(#net)" stroke="#EAF0EC" stroke-opacity="0.7"/>
+      <path d="M1140 244V356M1140 244L1178 259M1140 356L1178 341M1178 259V341" stroke="#F7F9F8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1140 259L1178 259M1140 275L1178 275M1140 292L1178 292M1140 308L1178 308M1140 325L1178 325M1140 341L1178 341" stroke="#F7F9F8" stroke-opacity="0.3"/>
     </g>
 
-    <text x="58" y="503" fill="#91A59A" font-size="12" font-weight="600">PYTHON / FASTAPI / REACT / POSTGRESQL / RAG</text>
+    <path d="M735 225L855 170L1022 218M735 375L855 300L1022 382M855 170V425M855 300L1022 218M855 300L1022 382" class="formation-line"/>
+
+    <g transform="translate(735 220)" filter="url(#playerShadow)">
+      <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
+      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+      <text x="0" y="7" class="player-number" fill="#182018">4</text>
+      <rect x="-37" y="22" width="74" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
+      <text x="0" y="41" class="player-label">ClayHR</text>
+    </g>
+
+    <g transform="translate(735 374)" filter="url(#playerShadow)">
+      <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
+      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
+      <text x="0" y="7" class="player-number" fill="#182018">3</text>
+      <rect x="-47" y="22" width="94" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
+      <text x="0" y="41" class="player-label">Chatbot App</text>
+    </g>
+
+    <g transform="translate(855 165)" filter="url(#playerShadow)">
+      <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
+      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+      <text x="0" y="7" class="player-number" fill="#182018">8</text>
+      <rect x="-48" y="22" width="96" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
+      <text x="0" y="41" class="player-label">NCSA + IML</text>
+    </g>
+
+    <g transform="translate(855 300)" filter="url(#playerShadow)">
+      <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
+      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
+      <text x="0" y="7" class="player-number" fill="#182018">7</text>
+      <rect x="-45" y="22" width="90" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
+      <text x="0" y="41" class="player-label">AstroGnani</text>
+    </g>
+
+    <g transform="translate(855 420)" filter="url(#playerShadow)">
+      <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
+      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
+      <text x="0" y="7" class="player-number" fill="#182018">6</text>
+      <rect x="-47" y="22" width="94" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
+      <text x="0" y="41" class="player-label">Skill vs Luck</text>
+    </g>
+
+    <g transform="translate(1022 215)" filter="url(#playerShadow)">
+      <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
+      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+      <text x="0" y="7" class="player-number" fill="#182018">9</text>
+      <rect x="-39" y="22" width="78" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
+      <text x="0" y="41" class="player-label">Gnani.ai</text>
+    </g>
+
+    <g transform="translate(1022 380)" filter="url(#playerShadow)">
+      <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
+      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+      <text x="0" y="7" class="player-number" fill="#182018">10</text>
+      <rect x="-31" y="22" width="62" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
+      <text x="0" y="41" class="player-label">Zapp</text>
+    </g>
   </g>
 </svg>
