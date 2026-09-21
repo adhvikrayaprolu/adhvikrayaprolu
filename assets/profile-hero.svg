@@ -1,39 +1,117 @@
-<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Adhvik Rayaprolu profile banner</title>
-  <desc id="desc">A red, dark red, and blue landing banner introducing Adhvik Rayaprolu as a UIUC Math and Computer Science student building AI and full-stack systems.</desc>
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Adhvik Rayaprolu profile pitch</title>
+  <desc id="desc">A subtle Arsenal-inspired soccer tactics board introducing Adhvik Rayaprolu as a UIUC Math and Computer Science student building AI systems, full-stack products, and research tools.</desc>
   <defs>
-    <linearGradient id="heroGradient" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#EF0107"/>
-      <stop offset="0.48" stop-color="#DB0007"/>
-      <stop offset="1" stop-color="#063672"/>
+    <linearGradient id="field" x1="90" y1="48" x2="1110" y2="632" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#063672"/>
+      <stop offset="0.58" stop-color="#0B2555"/>
+      <stop offset="1" stop-color="#111827"/>
     </linearGradient>
-    <linearGradient id="lineGradient" x1="120" y1="316" x2="1080" y2="316" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="0.25" stop-color="#FFFFFF" stop-opacity="0.72"/>
-      <stop offset="0.75" stop-color="#FFFFFF" stop-opacity="0.72"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    <linearGradient id="redWash" x1="0" y1="0" x2="1200" y2="680" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EF0107" stop-opacity="0.42"/>
+      <stop offset="0.46" stop-color="#DB0007" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#063672" stop-opacity="0.1"/>
     </linearGradient>
-    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#120004" flood-opacity="0.24"/>
+    <linearGradient id="cardStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.16"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#030712" flood-opacity="0.26"/>
     </filter>
+    <style>
+      .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .line { stroke: #FFFFFF; stroke-opacity: 0.38; stroke-width: 2; }
+      .thin { stroke: #FFFFFF; stroke-opacity: 0.2; stroke-width: 1; }
+      .route { stroke: #FFFFFF; stroke-opacity: 0.32; stroke-width: 2; stroke-dasharray: 7 9; }
+      .card { fill: #061A3D; fill-opacity: 0.78; stroke: url(#cardStroke); stroke-width: 1.5; }
+      .chip { fill: #EF0107; fill-opacity: 0.92; }
+      .small { fill: #DDE7F6; font-size: 18px; font-weight: 650; letter-spacing: 0; }
+      .label { fill: #FFFFFF; font-size: 22px; font-weight: 800; letter-spacing: 0; }
+      .body { fill: #F8FAFC; font-size: 17px; font-weight: 560; letter-spacing: 0; }
+      .micro { fill: #BFD0EA; font-size: 14px; font-weight: 700; letter-spacing: 0; }
+    </style>
   </defs>
-  <rect width="1200" height="420" fill="#063672"/>
-  <path d="M0 0H1200V420H0V0Z" fill="url(#heroGradient)"/>
-  <path d="M0 0H1200L968 420H0V0Z" fill="#EF0107" opacity="0.55"/>
-  <path d="M1200 0V420H616L892 0H1200Z" fill="#063672" opacity="0.82"/>
-  <path d="M64 58H1136V362H64V58Z" fill="#0B1020" opacity="0.16"/>
-  <path d="M92 86H1108V334H92V86Z" stroke="#FFFFFF" stroke-opacity="0.42" stroke-width="2"/>
-  <text x="950" y="264" text-anchor="middle" fill="#FFFFFF" opacity="0.12" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="190" font-weight="900">AR</text>
-  <g filter="url(#softShadow)">
-    <text x="140" y="142" fill="#FFFFFF" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="700">MATH + CS @ UIUC</text>
-    <text x="140" y="218" fill="#FFFFFF" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="62" font-weight="800">ADHVIK RAYAPROLU</text>
-    <text x="140" y="276" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="25" font-weight="600">AI systems, full-stack products, research tools</text>
+
+  <rect width="1200" height="680" fill="#F7F7F8"/>
+  <rect x="64" y="36" width="1072" height="608" rx="28" fill="#DB0007"/>
+  <rect x="86" y="58" width="1028" height="564" rx="22" fill="url(#field)"/>
+  <rect x="86" y="58" width="1028" height="564" rx="22" fill="url(#redWash)"/>
+
+  <g opacity="0.34">
+    <path d="M136 106H1064" class="thin"/>
+    <path d="M136 158H1064" class="thin"/>
+    <path d="M136 210H1064" class="thin"/>
+    <path d="M136 262H1064" class="thin"/>
+    <path d="M136 314H1064" class="thin"/>
+    <path d="M136 366H1064" class="thin"/>
+    <path d="M136 418H1064" class="thin"/>
+    <path d="M136 470H1064" class="thin"/>
+    <path d="M136 522H1064" class="thin"/>
+    <path d="M136 574H1064" class="thin"/>
   </g>
-  <path d="M120 316H760" stroke="url(#lineGradient)" stroke-width="3"/>
-  <g fill="#FFFFFF" opacity="0.9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="700">
-    <text x="142" y="350">PYTHON</text>
-    <text x="276" y="350">REACT</text>
-    <text x="390" y="350">FASTAPI</text>
-    <text x="536" y="350">OPENAI API</text>
+
+  <rect x="122" y="94" width="956" height="492" rx="12" class="line"/>
+  <path d="M600 94V586" class="line"/>
+  <circle cx="600" cy="340" r="82" class="line"/>
+  <circle cx="600" cy="340" r="5" fill="#FFFFFF" opacity="0.72"/>
+  <rect x="122" y="222" width="118" height="236" class="line"/>
+  <rect x="960" y="222" width="118" height="236" class="line"/>
+  <rect x="122" y="282" width="48" height="116" class="line"/>
+  <rect x="1030" y="282" width="48" height="116" class="line"/>
+  <path d="M240 286C286 316 286 364 240 394" class="line"/>
+  <path d="M960 286C914 316 914 364 960 394" class="line"/>
+
+  <path d="M388 314C442 260 506 238 588 248" class="route"/>
+  <path d="M812 314C758 260 694 238 612 248" class="route"/>
+  <path d="M392 462C472 410 530 385 600 386" class="route"/>
+  <path d="M808 462C728 410 670 385 600 386" class="route"/>
+
+  <g filter="url(#shadow)">
+    <rect x="330" y="228" width="540" height="214" rx="14" fill="#07162F" fill-opacity="0.86" stroke="#FFFFFF" stroke-opacity="0.24"/>
+    <text x="600" y="276" text-anchor="middle" class="sans micro">MATH + CS @ UIUC</text>
+    <text x="600" y="334" text-anchor="middle" fill="#FFFFFF" class="sans" font-size="56" font-weight="900" letter-spacing="0">ADHVIK</text>
+    <text x="600" y="386" text-anchor="middle" fill="#FFFFFF" class="sans" font-size="50" font-weight="900" letter-spacing="0">RAYAPROLU</text>
+    <text x="600" y="418" text-anchor="middle" class="sans body">AI systems, products, research tools</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="168" y="142" width="268" height="114" rx="12" class="card"/>
+    <circle cx="198" cy="172" r="11" class="chip"/>
+    <text x="222" y="178" class="sans micro">AI INTERN</text>
+    <text x="198" y="214" class="sans label">Gnani.ai</text>
+    <text x="198" y="238" class="sans body">Voice + chat agents</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="764" y="142" width="268" height="114" rx="12" class="card"/>
+    <circle cx="794" cy="172" r="11" class="chip"/>
+    <text x="818" y="178" class="sans micro">CO-FOUNDER</text>
+    <text x="794" y="214" class="sans label">Zapp</text>
+    <text x="794" y="238" class="sans body">Spending intelligence</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="168" y="430" width="268" height="114" rx="12" class="card"/>
+    <circle cx="198" cy="460" r="11" class="chip"/>
+    <text x="222" y="466" class="sans micro">RESEARCH</text>
+    <text x="198" y="502" class="sans label">NCSA + IML</text>
+    <text x="198" y="526" class="sans body">LLMs, RAG, analytics</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="764" y="430" width="268" height="114" rx="12" class="card"/>
+    <circle cx="794" cy="460" r="11" class="chip"/>
+    <text x="818" y="466" class="sans micro">SWE INTERN</text>
+    <text x="794" y="502" class="sans label">ClayHR</text>
+    <text x="794" y="526" class="sans body">Chatbot + community apps</text>
+  </g>
+
+  <g class="sans" font-size="16" font-weight="800" fill="#FFFFFF" opacity="0.88">
+    <text x="220" y="616" text-anchor="middle">PYTHON</text>
+    <text x="390" y="616" text-anchor="middle">FASTAPI</text>
+    <text x="560" y="616" text-anchor="middle">REACT</text>
+    <text x="730" y="616" text-anchor="middle">DJANGO</text>
+    <text x="910" y="616" text-anchor="middle">OPENAI API</text>
   </g>
 </svg>
