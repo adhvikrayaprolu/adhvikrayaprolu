@@ -1,193 +1,206 @@
-<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Adhvik Rayaprolu portfolio starting lineup</title>
-  <desc id="desc">A horizontal football team sheet showing Adhvik's professional experience and selected repositories as a tactical lineup on a realistic green pitch with two goals.</desc>
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Adhvik Rayaprolu scouting report</title>
+  <desc id="desc">A professional football scouting report with Adhvik's profile and technical attributes beside a three-dimensional pitch. Clickable players represent experience and selected work.</desc>
   <defs>
-    <linearGradient id="stadium" x1="24" y1="20" x2="1160" y2="580" gradientUnits="userSpaceOnUse">
+    <linearGradient id="stadium" x1="30" y1="18" x2="1164" y2="622" gradientUnits="userSpaceOnUse">
       <stop stop-color="#111B16"/>
-      <stop offset="0.55" stop-color="#0B1711"/>
-      <stop offset="1" stop-color="#06100B"/>
+      <stop offset="0.52" stop-color="#0B1711"/>
+      <stop offset="1" stop-color="#050D08"/>
     </linearGradient>
-    <linearGradient id="pitch" x1="570" y1="110" x2="1140" y2="490" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#397B4D"/>
-      <stop offset="0.48" stop-color="#2E7145"/>
-      <stop offset="1" stop-color="#245F39"/>
+    <linearGradient id="pitch" x1="840" y1="112" x2="840" y2="554" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4B8B5D"/>
+      <stop offset="0.5" stop-color="#2F7045"/>
+      <stop offset="1" stop-color="#195833"/>
     </linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
       <stop stop-color="#F1D98B"/>
       <stop offset="1" stop-color="#C5A756"/>
     </linearGradient>
-    <pattern id="grassGrain" width="18" height="18" patternUnits="userSpaceOnUse">
-      <path d="M2 18L5 7M8 18L10 3M14 18L16 9" stroke="#D7F1DE" stroke-opacity="0.045" stroke-width="1"/>
-      <path d="M5 15L3 5M12 18L13 8M17 14L16 2" stroke="#031B0C" stroke-opacity="0.055" stroke-width="1"/>
+    <pattern id="grassGrain" width="17" height="17" patternUnits="userSpaceOnUse">
+      <path d="M2 17L4 7M8 17L10 2M14 17L16 8" stroke="#D9F0DF" stroke-opacity="0.045"/>
+      <path d="M5 14L3 4M12 17L13 7M16 13L15 2" stroke="#031B0C" stroke-opacity="0.055"/>
     </pattern>
-    <pattern id="net" width="10" height="10" patternUnits="userSpaceOnUse">
-      <path d="M0 0H10V10" stroke="#F4F7F5" stroke-opacity="0.5" stroke-width="0.8"/>
+    <pattern id="net" width="12" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 0H12V10" stroke="#F4F7F5" stroke-opacity="0.46" stroke-width="0.8"/>
     </pattern>
-    <filter id="pitchShadow" x="-12%" y="-20%" width="124%" height="150%">
-      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.46"/>
+    <clipPath id="pitchClip">
+      <path d="M700 120H980L1170 545H510L700 120Z"/>
+    </clipPath>
+    <filter id="pitchShadow" x="-15%" y="-20%" width="130%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#000000" flood-opacity="0.5"/>
     </filter>
     <filter id="playerShadow" x="-80%" y="-60%" width="260%" height="260%">
-      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#041009" flood-opacity="0.55"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#041009" flood-opacity="0.58"/>
     </filter>
     <style>
       .body { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; }
       .display { font-family: "DIN Condensed", "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif; font-stretch: condensed; }
-      .pitch-line { fill: none; stroke: #F4F7F5; stroke-width: 2; stroke-opacity: 0.72; }
-      .eyebrow { fill: #CFDAD4; font-size: 12px; font-weight: 700; letter-spacing: 0; }
-      .small { fill: #98AAA0; font-size: 13px; font-weight: 600; letter-spacing: 0; }
+      .pitch-line { fill: none; stroke: #F5F8F6; stroke-width: 2; stroke-opacity: 0.7; }
+      .eyebrow { fill: #D2DDD7; font-size: 12px; font-weight: 700; letter-spacing: 0; }
+      .label { fill: #93A69B; font-size: 12px; font-weight: 650; letter-spacing: 0; }
+      .value { fill: #F5F7F6; font-size: 15px; font-weight: 700; letter-spacing: 0; }
       .player-number { font-family: "DIN Condensed", "Arial Narrow", sans-serif; font-size: 13px; font-weight: 700; text-anchor: middle; }
-      .player-label { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; fill: #FFFFFF; font-size: 13px; font-weight: 700; text-anchor: middle; letter-spacing: 0; }
-      .formation-line { fill: none; stroke: #F4F7F5; stroke-width: 1; stroke-opacity: 0.16; stroke-dasharray: 4 8; }
+      .player-label { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; fill: #FFFFFF; font-size: 12px; font-weight: 700; text-anchor: middle; letter-spacing: 0; }
+      .formation-line { fill: none; stroke: #F5F8F6; stroke-width: 1; stroke-opacity: 0.2; stroke-dasharray: 4 8; }
       .player-link { cursor: pointer; }
       .player-link:hover .player-label-bg, .player-link:focus .player-label-bg { fill: #234332; stroke-opacity: 1; }
       .player-link:hover .player-kit, .player-link:focus .player-kit { stroke-width: 2; }
     </style>
   </defs>
 
-  <rect width="1200" height="600" rx="24" fill="url(#stadium)"/>
-  <path d="M0 472C174 425 348 427 522 474C736 532 982 535 1200 475V600H0V472Z" fill="#030A06" fill-opacity="0.5"/>
+  <rect width="1200" height="640" rx="24" fill="url(#stadium)"/>
+  <path d="M0 508C176 461 339 463 500 505C725 564 956 572 1200 514V640H0V508Z" fill="#020805" fill-opacity="0.48"/>
+  <path d="M545 84L683 84L525 560H452L545 84Z" fill="#FFFFFF" fill-opacity="0.018"/>
+  <path d="M1090 65L1170 65L1200 255V456L1090 65Z" fill="#FFFFFF" fill-opacity="0.024"/>
 
   <g class="body">
-    <rect x="52" y="48" width="3" height="22" fill="#DCC47A"/>
-    <text x="69" y="65" class="eyebrow">PORTFOLIO LINEUP / 2026</text>
+    <rect x="52" y="47" width="3" height="22" fill="#DCC47A"/>
+    <text x="69" y="64" class="eyebrow">SCOUTING REPORT / 2026</text>
 
-    <text x="51" y="145" class="display" fill="#FFFFFF" font-size="61" font-weight="700">ADHVIK</text>
-    <text x="51" y="202" class="display" fill="#FFFFFF" font-size="61" font-weight="700">RAYAPROLU</text>
-    <path d="M54 226H496" stroke="#DCC47A" stroke-width="2"/>
+    <a href="https://github.com/adhvikrayaprolu" target="_top" aria-label="Open Adhvik Rayaprolu's GitHub profile">
+      <text x="51" y="143" class="display" fill="#FFFFFF" font-size="61" font-weight="700">ADHVIK</text>
+      <text x="51" y="200" class="display" fill="#FFFFFF" font-size="61" font-weight="700">RAYAPROLU</text>
+    </a>
+    <path d="M54 225H472" stroke="#DCC47A" stroke-width="2"/>
 
-    <text x="54" y="270" class="display" fill="#F2F5F3" font-size="21" font-weight="700">SOFTWARE ENGINEER / RESEARCHER</text>
-    <text x="54" y="307" fill="#C9D4CE" font-size="16" font-weight="600">Mathematics + Computer Science at UIUC</text>
-    <text x="54" y="339" fill="#98AAA0" font-size="15" font-weight="500">Building AI systems, full-stack products,</text>
-    <text x="54" y="362" fill="#98AAA0" font-size="15" font-weight="500">and research tools that ship.</text>
+    <text x="54" y="268" class="display" fill="#F2F5F3" font-size="21" font-weight="700">SOFTWARE ENGINEER / RESEARCHER</text>
+    <text x="54" y="305" fill="#CBD6D0" font-size="16" font-weight="600">Mathematics + Computer Science at UIUC</text>
+    <text x="54" y="337" fill="#98AAA0" font-size="15" font-weight="500">I build intelligent systems that move from</text>
+    <text x="54" y="360" fill="#98AAA0" font-size="15" font-weight="500">research prototypes to reliable products.</text>
 
-    <path d="M54 404H496" stroke="#FFFFFF" stroke-opacity="0.16"/>
-    <text x="54" y="435" class="eyebrow">LINEUP KEY</text>
+    <text x="54" y="403" class="eyebrow">PLAYER ATTRIBUTES</text>
+    <path d="M54 418H472M54 495H472M263 418V495" stroke="#FFFFFF" stroke-opacity="0.17"/>
 
-    <g transform="translate(57 469)">
-      <circle cx="8" cy="-10" r="4" fill="url(#gold)"/>
-      <path d="M-2 -4L4 -8H12L18 -4L14 3L12 0V14H4V0L2 3L-2 -4Z" fill="url(#gold)"/>
-      <text x="30" y="7" fill="#E8EEE9" font-size="14" font-weight="700">Experience</text>
-    </g>
-    <g transform="translate(205 469)">
-      <circle cx="8" cy="-10" r="4" fill="#F4F7F5"/>
-      <path d="M-2 -4L4 -8H12L18 -4L14 3L12 0V14H4V0L2 3L-2 -4Z" fill="#F4F7F5"/>
-      <text x="30" y="7" fill="#E8EEE9" font-size="14" font-weight="700">Repository / project</text>
-    </g>
+    <text x="54" y="443" class="label">AI SYSTEMS</text>
+    <text x="54" y="470" class="value">Agents + RAG</text>
+    <text x="283" y="443" class="label">BACKEND</text>
+    <text x="283" y="470" class="value">APIs + data</text>
 
-    <text x="54" y="548" class="small">PYTHON / FASTAPI / REACT / POSTGRESQL / RAG</text>
+    <path d="M54 512H472M54 589H472M263 512V589" stroke="#FFFFFF" stroke-opacity="0.17"/>
+    <text x="54" y="537" class="label">PRODUCT</text>
+    <text x="54" y="564" class="value">Full-stack apps</text>
+    <text x="283" y="537" class="label">RESEARCH</text>
+    <text x="283" y="564" class="value">LLMs + analytics</text>
+
+    <text x="54" y="615" fill="#86998E" font-size="12" font-weight="600">PYTHON / FASTAPI / REACT / POSTGRESQL</text>
   </g>
 
-  <text x="570" y="77" class="display" fill="#F3F6F4" font-size="25" font-weight="700">2 - 3 - 2  /  CURRENT LINEUP</text>
-  <text x="1140" y="76" class="body small" text-anchor="end">EXPERIENCE + SELECTED WORK</text>
+  <text x="540" y="58" class="display" fill="#F3F6F4" font-size="24" font-weight="700">2 - 3 - 2 / SELECTED LINEUP</text>
+  <text x="1150" y="56" class="body label" text-anchor="end">CLICK A PLAYER FOR PROOF</text>
 
   <g filter="url(#pitchShadow)">
-    <rect x="570" y="110" width="570" height="380" rx="3" fill="url(#pitch)"/>
-    <g opacity="0.17">
-      <rect x="570" y="110" width="71.25" height="380" fill="#D5EFDC"/>
-      <rect x="712.5" y="110" width="71.25" height="380" fill="#D5EFDC"/>
-      <rect x="855" y="110" width="71.25" height="380" fill="#D5EFDC"/>
-      <rect x="997.5" y="110" width="71.25" height="380" fill="#D5EFDC"/>
+    <path d="M700 120H980L1170 545H510L700 120Z" fill="url(#pitch)"/>
+    <g clip-path="url(#pitchClip)" opacity="0.16">
+      <rect x="500" y="120" width="680" height="54" fill="#D8EFDE"/>
+      <rect x="500" y="228" width="680" height="54" fill="#D8EFDE"/>
+      <rect x="500" y="336" width="680" height="54" fill="#D8EFDE"/>
+      <rect x="500" y="444" width="680" height="54" fill="#D8EFDE"/>
     </g>
-    <rect x="570" y="110" width="570" height="380" fill="url(#grassGrain)"/>
+    <path d="M700 120H980L1170 545H510L700 120Z" fill="url(#grassGrain)"/>
+    <path d="M700 120H980L1170 545H510L700 120Z" class="pitch-line"/>
 
-    <rect x="570" y="110" width="570" height="380" rx="3" class="pitch-line"/>
-    <path d="M855 110V490" class="pitch-line"/>
-    <circle cx="855" cy="300" r="58" class="pitch-line"/>
-    <circle cx="855" cy="300" r="3.5" fill="#F4F7F5" fill-opacity="0.8"/>
+    <path d="M608 326H1072" class="pitch-line"/>
+    <ellipse cx="840" cy="326" rx="78" ry="38" class="pitch-line"/>
+    <circle cx="840" cy="326" r="3.5" fill="#F5F8F6" fill-opacity="0.8"/>
 
-    <rect x="570" y="198" width="92" height="204" class="pitch-line"/>
-    <rect x="570" y="249" width="42" height="102" class="pitch-line"/>
-    <circle cx="636" cy="300" r="3.5" fill="#F4F7F5" fill-opacity="0.8"/>
-    <path d="M662 250A58 58 0 0 1 662 350" class="pitch-line"/>
+    <path d="M750 120H930L962 205H718L750 120Z" class="pitch-line"/>
+    <path d="M790 120H890L903 156H777L790 120Z" class="pitch-line"/>
+    <circle cx="840" cy="186" r="3" fill="#F5F8F6" fill-opacity="0.8"/>
+    <path d="M786 205C805 184 875 184 894 205" class="pitch-line"/>
 
-    <rect x="1048" y="198" width="92" height="204" class="pitch-line"/>
-    <rect x="1098" y="249" width="42" height="102" class="pitch-line"/>
-    <circle cx="1074" cy="300" r="3.5" fill="#F4F7F5" fill-opacity="0.8"/>
-    <path d="M1048 250A58 58 0 0 0 1048 350" class="pitch-line"/>
+    <path d="M601 449H1079L1122 545H558L601 449Z" class="pitch-line"/>
+    <path d="M696 494H984L1007 545H673L696 494Z" class="pitch-line"/>
+    <circle cx="840" cy="470" r="4" fill="#F5F8F6" fill-opacity="0.8"/>
+    <path d="M757 449C780 476 900 476 923 449" class="pitch-line"/>
 
-    <path d="M570 128A18 18 0 0 0 588 110M1122 110A18 18 0 0 0 1140 128M570 472A18 18 0 0 1 588 490M1122 490A18 18 0 0 1 1140 472" class="pitch-line"/>
-
-    <g>
-      <path d="M570 244L532 259V341L570 356Z" fill="url(#net)" stroke="#EAF0EC" stroke-opacity="0.7"/>
-      <path d="M570 244V356M570 244L532 259M570 356L532 341M532 259V341" stroke="#F7F9F8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M532 259L570 259M532 275L570 275M532 292L570 292M532 308L570 308M532 325L570 325M532 341L570 341" stroke="#F7F9F8" stroke-opacity="0.3"/>
-    </g>
-    <g>
-      <path d="M1140 244L1178 259V341L1140 356Z" fill="url(#net)" stroke="#EAF0EC" stroke-opacity="0.7"/>
-      <path d="M1140 244V356M1140 244L1178 259M1140 356L1178 341M1178 259V341" stroke="#F7F9F8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M1140 259L1178 259M1140 275L1178 275M1140 292L1178 292M1140 308L1178 308M1140 325L1178 325M1140 341L1178 341" stroke="#F7F9F8" stroke-opacity="0.3"/>
+    <g opacity="0.94">
+      <path d="M800 75H880L893 89H787L800 75Z" fill="url(#net)" stroke="#E9F0EC" stroke-opacity="0.52"/>
+      <path d="M800 75V112L787 120V89L800 75Z" fill="url(#net)"/>
+      <path d="M880 75V112L893 120V89L880 75Z" fill="url(#net)"/>
+      <path d="M800 112H880L893 120H787L800 112Z" fill="url(#net)"/>
+      <path d="M787 120V89H893V120" fill="none" stroke="#F5F8F6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M787 89L800 75H880L893 89M800 75V112M880 75V112M800 112H880" fill="none" stroke="#E2EAE5" stroke-width="1.6"/>
     </g>
 
-    <path d="M735 225L855 170L1022 218M735 375L855 300L1022 382M855 170V425M855 300L1022 218M855 300L1022 382" class="formation-line"/>
-
-    <a class="player-link" href="https://github.com/adhvikrayaprolu/chatbot-app" target="_top" aria-label="ClayHR work proof">
-    <g transform="translate(735 220)" filter="url(#playerShadow)">
-      <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
-      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
-      <text x="0" y="7" class="player-number" fill="#182018">4</text>
-      <rect class="player-label-bg" x="-37" y="22" width="74" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
-      <text x="0" y="41" class="player-label">ClayHR</text>
-    </g>
-    </a>
-
-    <a class="player-link" href="https://github.com/adhvikrayaprolu/chatbot-app" target="_top" aria-label="Open Chatbot App repository">
-    <g transform="translate(735 374)" filter="url(#playerShadow)">
-      <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
-      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
-      <text x="0" y="7" class="player-number" fill="#182018">3</text>
-      <rect class="player-label-bg" x="-47" y="22" width="94" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
-      <text x="0" y="41" class="player-label">Chatbot App</text>
-    </g>
-    </a>
-
-    <a class="player-link" href="https://github.com/adhvikrayaprolu/iml_skillvsluck" target="_top" aria-label="Open NCSA and IML research proof">
-    <g transform="translate(855 165)" filter="url(#playerShadow)">
-      <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
-      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
-      <text x="0" y="7" class="player-number" fill="#182018">8</text>
-      <rect class="player-label-bg" x="-48" y="22" width="96" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
-      <text x="0" y="41" class="player-label">NCSA + IML</text>
-    </g>
-    </a>
-
-    <a class="player-link" href="https://astro.gnani.site/" target="_top" aria-label="Open live AstroGnani product">
-    <g transform="translate(855 300)" filter="url(#playerShadow)">
-      <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
-      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
-      <text x="0" y="7" class="player-number" fill="#182018">7</text>
-      <rect class="player-label-bg" x="-45" y="22" width="90" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
-      <text x="0" y="41" class="player-label">AstroGnani</text>
-    </g>
-    </a>
-
-    <a class="player-link" href="https://github.com/adhvikrayaprolu/iml_skillvsluck" target="_top" aria-label="Open Skill vs Luck repository">
-    <g transform="translate(855 420)" filter="url(#playerShadow)">
-      <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
-      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
-      <text x="0" y="7" class="player-number" fill="#182018">6</text>
-      <rect class="player-label-bg" x="-47" y="22" width="94" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
-      <text x="0" y="41" class="player-label">Skill vs Luck</text>
-    </g>
-    </a>
+    <path d="M790 205L690 290L770 407M890 205L840 286L910 407M690 290L840 286L990 290M770 407L910 407" class="formation-line"/>
 
     <a class="player-link" href="https://astro.gnani.site/" target="_top" aria-label="Open Gnani.ai work proof">
-    <g transform="translate(1022 215)" filter="url(#playerShadow)">
-      <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
-      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
-      <text x="0" y="7" class="player-number" fill="#182018">9</text>
-      <rect class="player-label-bg" x="-39" y="22" width="78" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
-      <text x="0" y="41" class="player-label">Gnani.ai</text>
-    </g>
+      <g transform="translate(790 195)" filter="url(#playerShadow)">
+        <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
+        <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+        <text x="0" y="7" class="player-number" fill="#182018">9</text>
+        <rect class="player-label-bg" x="-39" y="22" width="78" height="27" rx="4" fill="#0B1711" fill-opacity="0.95" stroke="#E4CC7B" stroke-opacity="0.48"/>
+        <text x="0" y="40" class="player-label">Gnani.ai</text>
+      </g>
     </a>
 
     <a class="player-link" href="https://linkedin.com/in/adhvik-rayaprolu-9a214b327" target="_top" aria-label="Open Zapp work proof on LinkedIn">
-    <g transform="translate(1022 380)" filter="url(#playerShadow)">
-      <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
-      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
-      <text x="0" y="7" class="player-number" fill="#182018">10</text>
-      <rect class="player-label-bg" x="-31" y="22" width="62" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
-      <text x="0" y="41" class="player-label">Zapp</text>
-    </g>
+      <g transform="translate(890 195)" filter="url(#playerShadow)">
+        <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
+        <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+        <text x="0" y="7" class="player-number" fill="#182018">10</text>
+        <rect class="player-label-bg" x="-31" y="22" width="62" height="27" rx="4" fill="#0B1711" fill-opacity="0.95" stroke="#E4CC7B" stroke-opacity="0.48"/>
+        <text x="0" y="40" class="player-label">Zapp</text>
+      </g>
     </a>
+
+    <a class="player-link" href="https://github.com/adhvikrayaprolu/iml_skillvsluck" target="_top" aria-label="Open NCSA and IML research proof">
+      <g transform="translate(690 286)" filter="url(#playerShadow)">
+        <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
+        <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+        <text x="0" y="7" class="player-number" fill="#182018">8</text>
+        <rect class="player-label-bg" x="-48" y="22" width="96" height="27" rx="4" fill="#0B1711" fill-opacity="0.95" stroke="#E4CC7B" stroke-opacity="0.48"/>
+        <text x="0" y="40" class="player-label">NCSA + IML</text>
+      </g>
+    </a>
+
+    <a class="player-link" href="https://astro.gnani.site/" target="_top" aria-label="Open live AstroGnani product">
+      <g transform="translate(840 282)" filter="url(#playerShadow)">
+        <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
+        <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
+        <text x="0" y="7" class="player-number" fill="#182018">7</text>
+        <rect class="player-label-bg" x="-45" y="22" width="90" height="27" rx="4" fill="#0B1711" fill-opacity="0.95" stroke="#FFFFFF" stroke-opacity="0.32"/>
+        <text x="0" y="40" class="player-label">AstroGnani</text>
+      </g>
+    </a>
+
+    <a class="player-link" href="https://github.com/adhvikrayaprolu/chatbot-app" target="_top" aria-label="Open ClayHR work proof">
+      <g transform="translate(990 286)" filter="url(#playerShadow)">
+        <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
+        <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+        <text x="0" y="7" class="player-number" fill="#182018">4</text>
+        <rect class="player-label-bg" x="-37" y="22" width="74" height="27" rx="4" fill="#0B1711" fill-opacity="0.95" stroke="#E4CC7B" stroke-opacity="0.48"/>
+        <text x="0" y="40" class="player-label">ClayHR</text>
+      </g>
+    </a>
+
+    <a class="player-link" href="https://github.com/adhvikrayaprolu/chatbot-app" target="_top" aria-label="Open Chatbot App repository">
+      <g transform="translate(770 403)" filter="url(#playerShadow)">
+        <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
+        <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
+        <text x="0" y="7" class="player-number" fill="#182018">3</text>
+        <rect class="player-label-bg" x="-47" y="22" width="94" height="27" rx="4" fill="#0B1711" fill-opacity="0.95" stroke="#FFFFFF" stroke-opacity="0.32"/>
+        <text x="0" y="40" class="player-label">Chatbot App</text>
+      </g>
+    </a>
+
+    <a class="player-link" href="https://github.com/adhvikrayaprolu/iml_skillvsluck" target="_top" aria-label="Open Skill vs Luck repository">
+      <g transform="translate(910 403)" filter="url(#playerShadow)">
+        <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
+        <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
+        <text x="0" y="7" class="player-number" fill="#182018">6</text>
+        <rect class="player-label-bg" x="-47" y="22" width="94" height="27" rx="4" fill="#0B1711" fill-opacity="0.95" stroke="#FFFFFF" stroke-opacity="0.32"/>
+        <text x="0" y="40" class="player-label">Skill vs Luck</text>
+      </g>
+    </a>
+
+    <g opacity="0.96">
+      <path d="M690 460H990L1040 516H640L690 460Z" fill="url(#net)" stroke="#EAF0EC" stroke-opacity="0.48"/>
+      <path d="M690 460L640 516V606L690 545V460Z" fill="url(#net)" stroke="#EAF0EC" stroke-opacity="0.4"/>
+      <path d="M990 460L1040 516V606L990 545V460Z" fill="url(#net)" stroke="#EAF0EC" stroke-opacity="0.4"/>
+      <path d="M640 516H1040V606H640V516Z" fill="url(#net)" opacity="0.66"/>
+      <path d="M690 545V460H990V545" fill="none" stroke="#F7F9F8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M690 460L640 516V606M990 460L1040 516V606M640 606H1040M640 516H1040" fill="none" stroke="#E8EFEB" stroke-width="2.4" stroke-opacity="0.9"/>
+    </g>
   </g>
 </svg>
