@@ -38,6 +38,9 @@
       .player-number { font-family: "DIN Condensed", "Arial Narrow", sans-serif; font-size: 13px; font-weight: 700; text-anchor: middle; }
       .player-label { font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif; fill: #FFFFFF; font-size: 13px; font-weight: 700; text-anchor: middle; letter-spacing: 0; }
       .formation-line { fill: none; stroke: #F4F7F5; stroke-width: 1; stroke-opacity: 0.16; stroke-dasharray: 4 8; }
+      .player-link { cursor: pointer; }
+      .player-link:hover .player-label-bg, .player-link:focus .player-label-bg { fill: #234332; stroke-opacity: 1; }
+      .player-link:hover .player-kit, .player-link:focus .player-kit { stroke-width: 2; }
     </style>
   </defs>
 
@@ -117,60 +120,74 @@
 
     <path d="M735 225L855 170L1022 218M735 375L855 300L1022 382M855 170V425M855 300L1022 218M855 300L1022 382" class="formation-line"/>
 
+    <a class="player-link" href="https://github.com/adhvikrayaprolu/chatbot-app" target="_top" aria-label="ClayHR work proof">
     <g transform="translate(735 220)" filter="url(#playerShadow)">
       <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
-      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
       <text x="0" y="7" class="player-number" fill="#182018">4</text>
-      <rect x="-37" y="22" width="74" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
+      <rect class="player-label-bg" x="-37" y="22" width="74" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
       <text x="0" y="41" class="player-label">ClayHR</text>
     </g>
+    </a>
 
+    <a class="player-link" href="https://github.com/adhvikrayaprolu/chatbot-app" target="_top" aria-label="Open Chatbot App repository">
     <g transform="translate(735 374)" filter="url(#playerShadow)">
       <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
-      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
+      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
       <text x="0" y="7" class="player-number" fill="#182018">3</text>
-      <rect x="-47" y="22" width="94" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
+      <rect class="player-label-bg" x="-47" y="22" width="94" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
       <text x="0" y="41" class="player-label">Chatbot App</text>
     </g>
+    </a>
 
+    <a class="player-link" href="https://github.com/adhvikrayaprolu/iml_skillvsluck" target="_top" aria-label="Open NCSA and IML research proof">
     <g transform="translate(855 165)" filter="url(#playerShadow)">
       <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
-      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
       <text x="0" y="7" class="player-number" fill="#182018">8</text>
-      <rect x="-48" y="22" width="96" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
+      <rect class="player-label-bg" x="-48" y="22" width="96" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
       <text x="0" y="41" class="player-label">NCSA + IML</text>
     </g>
+    </a>
 
+    <a class="player-link" href="https://astro.gnani.site/" target="_top" aria-label="Open live AstroGnani product">
     <g transform="translate(855 300)" filter="url(#playerShadow)">
       <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
-      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
+      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
       <text x="0" y="7" class="player-number" fill="#182018">7</text>
-      <rect x="-45" y="22" width="90" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
+      <rect class="player-label-bg" x="-45" y="22" width="90" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
       <text x="0" y="41" class="player-label">AstroGnani</text>
     </g>
+    </a>
 
+    <a class="player-link" href="https://github.com/adhvikrayaprolu/iml_skillvsluck" target="_top" aria-label="Open Skill vs Luck repository">
     <g transform="translate(855 420)" filter="url(#playerShadow)">
       <circle cx="0" cy="-20" r="6" fill="#F4F7F5"/>
-      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
+      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="#F4F7F5" stroke="#FFFFFF"/>
       <text x="0" y="7" class="player-number" fill="#182018">6</text>
-      <rect x="-47" y="22" width="94" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
+      <rect class="player-label-bg" x="-47" y="22" width="94" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.3"/>
       <text x="0" y="41" class="player-label">Skill vs Luck</text>
     </g>
+    </a>
 
+    <a class="player-link" href="https://astro.gnani.site/" target="_top" aria-label="Open Gnani.ai work proof">
     <g transform="translate(1022 215)" filter="url(#playerShadow)">
       <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
-      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
       <text x="0" y="7" class="player-number" fill="#182018">9</text>
-      <rect x="-39" y="22" width="78" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
+      <rect class="player-label-bg" x="-39" y="22" width="78" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
       <text x="0" y="41" class="player-label">Gnani.ai</text>
     </g>
+    </a>
 
+    <a class="player-link" href="https://linkedin.com/in/adhvik-rayaprolu-9a214b327" target="_top" aria-label="Open Zapp work proof on LinkedIn">
     <g transform="translate(1022 380)" filter="url(#playerShadow)">
       <circle cx="0" cy="-20" r="6" fill="url(#gold)"/>
-      <path d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
+      <path class="player-kit" d="M-16 -11L-7 -17H7L16 -11L11 -2L7 -6V15H-7V-6L-11 -2L-16 -11Z" fill="url(#gold)" stroke="#FFF6D8" stroke-opacity="0.55"/>
       <text x="0" y="7" class="player-number" fill="#182018">10</text>
-      <rect x="-31" y="22" width="62" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
+      <rect class="player-label-bg" x="-31" y="22" width="62" height="28" rx="4" fill="#0B1711" fill-opacity="0.94" stroke="#E4CC7B" stroke-opacity="0.45"/>
       <text x="0" y="41" class="player-label">Zapp</text>
     </g>
+    </a>
   </g>
 </svg>

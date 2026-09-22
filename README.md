@@ -1,5 +1,17 @@
 <p align="center">
-  <img src="./assets/profile-hero.svg" alt="Adhvik Rayaprolu - Math and Computer Science student building AI systems, full-stack products, and research tools" width="100%">
+  <a href="https://raw.githubusercontent.com/adhvikrayaprolu/adhvikrayaprolu/main/assets/profile-hero.svg">
+    <img src="./assets/profile-hero.svg" alt="Adhvik Rayaprolu - Math and Computer Science student building AI systems, full-stack products, and research tools" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://astro.gnani.site/">Gnani.ai</a> ·
+  <a href="https://linkedin.com/in/adhvik-rayaprolu-9a214b327">Zapp</a> ·
+  <a href="https://github.com/adhvikrayaprolu/iml_skillvsluck">NCSA + IML</a> ·
+  <a href="https://github.com/adhvikrayaprolu/chatbot-app">ClayHR</a> ·
+  <a href="https://astro.gnani.site/">AstroGnani</a> ·
+  <a href="https://github.com/adhvikrayaprolu/chatbot-app">Chatbot App</a> ·
+  <a href="https://github.com/adhvikrayaprolu/iml_skillvsluck">Skill vs Luck</a>
 </p>
 
 # About
@@ -9,16 +21,17 @@ I'm a Mathematics + Computer Science student at UIUC building AI systems, full-s
 ## Current Lineup
 
 - **UIUC:** B.S. Mathematics + Computer Science, Dean's List
-- **Gnani.ai:** Voice and chat agent backends with FastAPI, PydanticAI, MCP, STT/TTS, and PostgreSQL
-- **Zapp:** Personal spending intelligence built with Django, React, Python, Supabase, and ML
-- **NCSA + IML:** LLM architecture, RAG/tool-calling workflows, and sports analytics research
+- **[Gnani.ai](https://astro.gnani.site/):** Voice and chat agent backends with FastAPI, PydanticAI, MCP, STT/TTS, and PostgreSQL
+- **[Zapp](https://linkedin.com/in/adhvik-rayaprolu-9a214b327):** Personal spending intelligence built with Django, React, Python, Supabase, and ML
+- **[NCSA + IML](https://github.com/adhvikrayaprolu/iml_skillvsluck):** LLM architecture, RAG/tool-calling workflows, and sports analytics research
+- **[ClayHR](https://github.com/adhvikrayaprolu/chatbot-app):** HR chatbot and community applications built with Flask, OpenAI, and Firebase
 
 ## Selected Work
 
 | Project | What it is | Stack |
 | --- | --- | --- |
 | [AstroGnani](https://astro.gnani.site/) | Live B2C AI astrology platform with streaming voice and chat agents. | Python, FastAPI, PydanticAI, PostgreSQL |
-| Zapp | Personal spending intelligence product for subscription value scores and recommendations. | Django, React, Python, Supabase |
+| [Zapp](https://linkedin.com/in/adhvik-rayaprolu-9a214b327) | Personal spending intelligence product for subscription value scores and recommendations. | Django, React, Python, Supabase |
 | [Chatbot App](https://github.com/adhvikrayaprolu/chatbot-app) | HR-focused chatbot with persistent conversations and RAG document-upload experiments. | Flask, OpenAI API |
 | [Skill vs Luck](https://github.com/adhvikrayaprolu/iml_skillvsluck) | Sports analytics research modeling 20+ years of European soccer outcomes. | Python, R, Data Analysis |
 
