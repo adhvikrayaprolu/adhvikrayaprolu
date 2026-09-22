@@ -1,53 +1,68 @@
-<p align="center">
-  <a href="https://raw.githubusercontent.com/adhvikrayaprolu/adhvikrayaprolu/main/assets/profile-hero.svg">
-    <img src="./assets/profile-hero.svg" alt="Adhvik Rayaprolu - Math and Computer Science student building AI systems, full-stack products, and research tools" width="100%">
-  </a>
-</p>
+# Adhvik Rayaprolu
 
-<p align="center">
-  <a href="https://astro.gnani.site/">Gnani.ai</a> ·
-  <a href="https://linkedin.com/in/adhvik-rayaprolu-9a214b327">Zapp</a> ·
-  <a href="https://github.com/adhvikrayaprolu/iml_skillvsluck">NCSA + IML</a> ·
-  <a href="https://github.com/adhvikrayaprolu/chatbot-app">ClayHR</a> ·
-  <a href="https://astro.gnani.site/">AstroGnani</a> ·
-  <a href="https://github.com/adhvikrayaprolu/chatbot-app">Chatbot App</a> ·
-  <a href="https://github.com/adhvikrayaprolu/iml_skillvsluck">Skill vs Luck</a>
-</p>
+**Software engineer building full-stack products and AI systems.**<br>
+Mathematics + Computer Science at UIUC, Class of 2028.
 
-# About
+[Email](mailto:adhvik.rayaprolu@gmail.com) · [LinkedIn](https://linkedin.com/in/adhvik-rayaprolu-9a214b327) · [GitHub](https://github.com/adhvikrayaprolu)
 
-I'm a Mathematics + Computer Science student at UIUC building AI systems, full-stack products, and research tools. I turn messy real-world problems into software people can actually use.
+<table>
+  <tr>
+    <th colspan="2" align="left">AR / PLAYER CARD</th>
+  </tr>
+  <tr>
+    <td><strong>Backend</strong><br>APIs + agent services</td>
+    <td><strong>Frontend</strong><br>React + Next.js</td>
+  </tr>
+  <tr>
+    <td><strong>AI / ML</strong><br>RAG + tool calling</td>
+    <td><strong>Databases</strong><br>PostgreSQL + Redis</td>
+  </tr>
+  <tr>
+    <td><strong>DevOps</strong><br>Docker + Git</td>
+    <td><strong>Product Sense</strong><br>Data models to MVPs</td>
+  </tr>
+</table>
 
-## Current Lineup
+## Scouting Report
 
-- **UIUC:** B.S. Mathematics + Computer Science, Dean's List
-- **[Gnani.ai](https://astro.gnani.site/):** Voice and chat agent backends with FastAPI, PydanticAI, MCP, STT/TTS, and PostgreSQL
-- **[Zapp](https://linkedin.com/in/adhvik-rayaprolu-9a214b327):** Personal spending intelligence built with Django, React, Python, Supabase, and ML
-- **[NCSA + IML](https://github.com/adhvikrayaprolu/iml_skillvsluck):** LLM architecture, RAG/tool-calling workflows, and sports analytics research
-- **[ClayHR](https://github.com/adhvikrayaprolu/chatbot-app):** HR chatbot and community applications built with Flask, OpenAI, and Firebase
+I connect backend services, AI agents, and interfaces into usable products. At Gnani.ai I built voice and chat agent backends; at Zapp I co-founded and developed a spending-intelligence MVP; at ClayHR I built chatbot and community apps. My work fits backend, full-stack, and applied AI engineering roles.
 
-## Selected Work
+## Match Highlights
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| [AstroGnani](https://astro.gnani.site/) | Live B2C AI astrology platform with streaming voice and chat agents. | Python, FastAPI, PydanticAI, PostgreSQL |
-| [Zapp](https://linkedin.com/in/adhvik-rayaprolu-9a214b327) | Personal spending intelligence product for subscription value scores and recommendations. | Django, React, Python, Supabase |
-| [Chatbot App](https://github.com/adhvikrayaprolu/chatbot-app) | HR-focused chatbot with persistent conversations and RAG document-upload experiments. | Flask, OpenAI API |
-| [Skill vs Luck](https://github.com/adhvikrayaprolu/iml_skillvsluck) | Sports analytics research modeling 20+ years of European soccer outcomes. | Python, R, Data Analysis |
+**[AstroGnani](https://astro.gnani.site/)** · Live product / Gnani.ai<br>
+Built the voice and chat backend for a consumer AI platform, with streaming responses, memory, and multilingual support.<br>
+`Python` `FastAPI` `PydanticAI` `PostgreSQL`
 
-## Kit Bag
+**Zapp** · Co-founder / [LinkedIn profile](https://linkedin.com/in/adhvik-rayaprolu-9a214b327)<br>
+Built MVP workflows connecting subscription data and value scores to retain, downgrade, or cancel recommendations.<br>
+`Django` `React` `Supabase` `Python`
+<!-- TODO: Add a public Zapp demo or repository when available. -->
 
-<p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-1B3A2C?style=flat-square&logo=python&logoColor=white">
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-26332C?style=flat-square&logo=javascript&logoColor=white">
-  <img alt="Java" src="https://img.shields.io/badge/Java-1B3A2C?style=flat-square&logo=openjdk&logoColor=white">
-  <img alt="React" src="https://img.shields.io/badge/React-26332C?style=flat-square&logo=react&logoColor=white">
-  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-1B3A2C?style=flat-square&logo=fastapi&logoColor=white">
-  <img alt="Django" src="https://img.shields.io/badge/Django-26332C?style=flat-square&logo=django&logoColor=white">
-  <img alt="OpenAI API" src="https://img.shields.io/badge/OpenAI_API-1B3A2C?style=flat-square&logo=openai&logoColor=white">
-</p>
+**[UIUC SkillShare](https://github.com/adhvikrayaprolu/uiuc-skillshare)** · Repository<br>
+Built a peer-learning platform with profile discovery, help requests, reviews, and endorsements.<br>
+`React` `TypeScript` `Django REST`
 
-## Touchline
+**[Chatbot App](https://github.com/adhvikrayaprolu/chatbot-app)** · Repository / ClayHR<br>
+Built HR support conversations with persistent history and document-upload experiments for retrieval-augmented responses.<br>
+`Flask` `OpenAI API` `JavaScript`
 
-- GitHub: [@adhvikrayaprolu](https://github.com/adhvikrayaprolu)
-- LinkedIn: [adhvik-rayaprolu](https://linkedin.com/in/adhvik-rayaprolu-9a214b327)
+**[Skill vs Luck](https://github.com/adhvikrayaprolu/iml_skillvsluck)** · Research / Illinois Mathematics Lab<br>
+Modeled 20+ years of European soccer results to study how skill and luck shape league outcomes.<br>
+`Python` `R` `Statistical modeling`
+
+## Formation
+
+- **Languages:** Python, TypeScript, JavaScript, Java, SQL, R
+- **Backend + data:** FastAPI, Django, Flask, PostgreSQL, Redis, Firebase
+- **Frontend + tooling:** React, Next.js, Docker, Git
+- **AI + modeling:** PydanticAI, MCP, RAG, scikit-learn, pandas
+
+## Current Focus
+
+Designing LLM, retrieval, and tool-calling workflows for an mHealth research platform at NCSA SPIN. At Illinois Mathematics Lab, I'm studying the calibration of in-game NBA win-probability forecasts.
+<!-- Refresh this section as research projects change. Source: September 2026 resume. -->
+
+## Contact
+
+[adhvik.rayaprolu@gmail.com](mailto:adhvik.rayaprolu@gmail.com) · [LinkedIn](https://linkedin.com/in/adhvik-rayaprolu-9a214b327) · [GitHub](https://github.com/adhvikrayaprolu)<br>
+Portfolio: [add your portfolio URL]
