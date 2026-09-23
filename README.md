@@ -1,49 +1,31 @@
-<p align="center">
-  <img src="./assets/profile-hero.svg" width="100%" alt="Sketchbook scouting report: a colored-pencil FIFA-style card for Adhvik Rayaprolu (89 CAM, Math + CS at UIUC) next to a hand-drawn pitch where each player is one of his projects.">
-</p>
+<!-- Every section below is a hand-drawn SVG. Source + generator: scripts/sketch (npm run build). -->
 
 <p align="center">
-  <b>Lineup:</b>
-  #4 <a href="https://github.com/adhvikrayaprolu/iml_skillvsluck">Skill vs Luck</a> ·
-  #5 <a href="https://github.com/adhvikrayaprolu/chatbot-app">Chatbot App</a> ·
-  #8 <a href="https://github.com/adhvikrayaprolu/iml_skillvsluck">NCSA + IML</a> ·
-  #10 <a href="https://astro.gnani.site/">AstroGnani</a> ·
-  #6 <a href="https://github.com/adhvikrayaprolu/chatbot-app">ClayHR</a> ·
-  #9 <a href="https://astro.gnani.site/">Gnani.ai</a> ·
-  #11 <a href="https://linkedin.com/in/adhvik-rayaprolu-9a214b327">Zapp</a>
+  <img src="./assets/hero-sketch.svg" width="100%" alt="Sketchbook scouting report: a colored-pencil FIFA-style card for Adhvik Rayaprolu (89 CAM, Math + CS at UIUC) next to a hand-drawn pitch where each player is one of his projects.">
 </p>
-
-<br>
 
 <img src="./assets/h-scouting-report.svg" width="100%" alt="Scouting report">
-
-I'm a Mathematics + Computer Science student at UIUC building AI systems, full-stack products, and research tools. I turn messy real-world problems into software people can actually use.
-
-- **Plays as:** creative attacking mid: builds the agent, wires the backend, ships the product
-- **Academy:** UIUC, B.S. Mathematics + Computer Science, Dean's List
-- **Currently training on:** voice and chat agents, RAG + tool-calling, and sports analytics
+<img src="./assets/scouting-report.svg" width="100%" alt="I'm a Math + CS student at UIUC building AI systems, full-stack products and research tools. Plays as a creative attacking mid; Dean's List; training on voice and chat agents, RAG and tool-calling, and sports analytics.">
 
 <img src="./assets/h-the-squad.svg" width="100%" alt="The squad">
-
-| # | Player | Position | What it is | Stack |
-| :-: | --- | --- | --- | --- |
-| 9 | **[Gnani.ai](https://astro.gnani.site/)** | Striker | Voice and chat agent backends with streaming STT/TTS | FastAPI, PydanticAI, MCP, PostgreSQL |
-| 10 | **[AstroGnani](https://astro.gnani.site/)** | Playmaker | Live B2C AI astrology platform with streaming voice and chat agents | Python, FastAPI, PydanticAI, PostgreSQL |
-| 11 | **[Zapp](https://linkedin.com/in/adhvik-rayaprolu-9a214b327)** | Winger | Personal spending intelligence: subscription value scores and recommendations | Django, React, Supabase, ML |
-| 8 | **[NCSA + IML](https://github.com/adhvikrayaprolu/iml_skillvsluck)** | Box-to-box | LLM architecture, RAG/tool-calling workflows, and sports analytics research | Python, LLMs, RAG |
-| 6 | **[ClayHR](https://github.com/adhvikrayaprolu/chatbot-app)** | Holding mid | HR chatbot and community applications | Flask, OpenAI, Firebase |
-| 4 | **[Skill vs Luck](https://github.com/adhvikrayaprolu/iml_skillvsluck)** | Centre-back | Modeling 20+ years of European soccer outcomes: how much is skill? | Python, R |
-| 5 | **[Chatbot App](https://github.com/adhvikrayaprolu/chatbot-app)** | Centre-back | HR-focused chatbot with persistent conversations and RAG document upload | Flask, OpenAI API |
-
-<img src="./assets/h-kit-bag.svg" width="100%" alt="Kit bag">
-
-<img src="./assets/kit-bag.svg" width="100%" alt="Tools: Python, JavaScript, Java, R, FastAPI, Django, Flask, PydanticAI, MCP, OpenAI API, RAG, React, PostgreSQL, Supabase, Firebase">
-
-<img src="./assets/h-touchline.svg" width="100%" alt="Touchline">
-
-<p>
-  <a href="https://linkedin.com/in/adhvik-rayaprolu-9a214b327">LinkedIn</a> ·
-  <a href="https://github.com/adhvikrayaprolu">GitHub</a>
+<p align="center">
+  <a href="https://astro.gnani.site/"><img src="./assets/squad-gnani.svg" width="49%" alt="#9 Gnani.ai, striker: voice and chat agent backends"></a>
+  <a href="https://linkedin.com/in/adhvik-rayaprolu-9a214b327"><img src="./assets/squad-zapp.svg" width="49%" alt="#11 Zapp, winger: personal spending intelligence"></a>
+  <a href="https://astro.gnani.site/"><img src="./assets/squad-astrognani.svg" width="49%" alt="#10 AstroGnani, playmaker: live AI astrology platform"></a>
+  <a href="https://github.com/adhvikrayaprolu/iml_skillvsluck"><img src="./assets/squad-ncsa.svg" width="49%" alt="#8 NCSA + IML, box-to-box: LLM and sports analytics research"></a>
+  <a href="https://github.com/adhvikrayaprolu/chatbot-app"><img src="./assets/squad-clayhr.svg" width="49%" alt="#6 ClayHR, holding mid: HR chatbot and community apps"></a>
+  <a href="https://github.com/adhvikrayaprolu/iml_skillvsluck"><img src="./assets/squad-skillvsluck.svg" width="49%" alt="#4 Skill vs Luck, centre-back: 20+ years of European soccer outcomes"></a>
+  <a href="https://github.com/adhvikrayaprolu/chatbot-app"><img src="./assets/squad-chatbot.svg" width="49%" alt="#5 Chatbot App, centre-back: HR chatbot with RAG document upload"></a>
+  <img src="./assets/squad-uiuc.svg" width="49%" alt="#1 UIUC, keeper: B.S. Mathematics + Computer Science, Dean's List">
 </p>
 
-<sub>Drawn in code with <a href="https://github.com/rough-stuff/rough">rough.js</a>. Regenerate with <code>cd scripts/sketch && npm i && npm run build</code> (needs Python + fonttools).</sub>
+<img src="./assets/h-kit-bag.svg" width="100%" alt="Kit bag">
+<img src="./assets/kit-bag.svg" width="100%" alt="Tools: Python, JavaScript, Java, R, FastAPI, Django, PydanticAI, MCP, OpenAI API, RAG, React, Flask, PostgreSQL, Supabase, Firebase">
+
+<img src="./assets/h-touchline.svg" width="100%" alt="Touchline">
+<p align="center">
+  <a href="https://linkedin.com/in/adhvik-rayaprolu-9a214b327"><img src="./assets/contact-linkedin.svg" width="32%" alt="LinkedIn"></a>
+  <a href="https://github.com/adhvikrayaprolu?tab=repositories"><img src="./assets/contact-github.svg" width="32%" alt="GitHub repositories"></a>
+</p>
+
+<img src="./assets/full-time.svg" width="100%" alt="Full time. Thanks for scouting.">

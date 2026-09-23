@@ -1,5 +1,5 @@
 // Sketchbook football hero for github.com/adhvikrayaprolu
-// Generates assets/profile-hero.svg using rough.js (hand-drawn strokes + hachure "colored pencil" fills)
+// Generates assets/hero-sketch.svg using rough.js (hand-drawn strokes + hachure "colored pencil" fills)
 import rough from 'roughjs';
 import fs from 'fs';
 
@@ -445,5 +445,5 @@ svg.push(text(466, 640, 'formation 1-2-3-2 · every player is a real project', {
 
 svg.push(`</svg>`);
 fs.mkdirSync('../../assets', { recursive: true });
-fs.writeFileSync('../../assets/profile-hero.svg', svg.join('\n'));
-console.log('ok', (fs.statSync('../../assets/profile-hero.svg').size / 1024).toFixed(1) + 'KB', 'goalT', goalT.toFixed(3));
+fs.writeFileSync('../../assets/hero-sketch.svg', svg.join('\n'));
+console.log('ok', (fs.statSync('../../assets/hero-sketch.svg').size / 1024).toFixed(1) + 'KB', 'goalT', goalT.toFixed(3));

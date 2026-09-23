@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Generates the colored-pencil football SVGs for the profile README",
   "scripts": {
-    "build": "node build.mjs && node build-extras.mjs && python3 slim.py"
+    "build": "node build.mjs && node build-extras.mjs && node build-readme.mjs && python3 slim.py"
   },
   "dependencies": {
     "@fontsource/caveat": "^5.0.0",
