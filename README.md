@@ -1,31 +1,29 @@
-<!-- Every section below is a hand-drawn SVG. Source + generator: scripts/sketch (npm run build). -->
+# Adhvik Rayaprolu
 
-<p align="center">
-  <img src="./assets/hero-sketch.svg" width="100%" alt="Sketchbook scouting report: a colored-pencil FIFA-style card for Adhvik Rayaprolu (89 CAM, Math + CS at UIUC) next to a hand-drawn pitch where each player is one of his projects.">
-</p>
+Mathematics + Computer Science student at the University of Illinois Urbana-Champaign, building full-stack products, AI systems and research tools.
 
-<img src="./assets/h-scouting-report.svg" width="100%" alt="Scouting report">
-<img src="./assets/scouting-report.svg" width="100%" alt="I'm a Math + CS student at UIUC building AI systems, full-stack products and research tools. Plays as a creative attacking mid; Dean's List; training on voice and chat agents, RAG and tool-calling, and sports analytics.">
+## Featured software
 
-<img src="./assets/h-the-squad.svg" width="100%" alt="The squad">
-<p align="center">
-  <a href="https://astro.gnani.site/"><img src="./assets/squad-gnani.svg" width="49%" alt="#9 Gnani.ai, striker: voice and chat agent backends"></a>
-  <a href="https://linkedin.com/in/adhvik-rayaprolu-9a214b327"><img src="./assets/squad-zapp.svg" width="49%" alt="#11 Zapp, winger: personal spending intelligence"></a>
-  <a href="https://astro.gnani.site/"><img src="./assets/squad-astrognani.svg" width="49%" alt="#10 AstroGnani, playmaker: live AI astrology platform"></a>
-  <a href="https://github.com/adhvikrayaprolu/iml_skillvsluck"><img src="./assets/squad-ncsa.svg" width="49%" alt="#8 NCSA + IML, box-to-box: LLM and sports analytics research"></a>
-  <a href="https://github.com/adhvikrayaprolu/chatbot-app"><img src="./assets/squad-clayhr.svg" width="49%" alt="#6 ClayHR, holding mid: HR chatbot and community apps"></a>
-  <a href="https://github.com/adhvikrayaprolu/iml_skillvsluck"><img src="./assets/squad-skillvsluck.svg" width="49%" alt="#4 Skill vs Luck, centre-back: 20+ years of European soccer outcomes"></a>
-  <a href="https://github.com/adhvikrayaprolu/chatbot-app"><img src="./assets/squad-chatbot.svg" width="49%" alt="#5 Chatbot App, centre-back: HR chatbot with RAG document upload"></a>
-  <img src="./assets/squad-uiuc.svg" width="49%" alt="#1 UIUC, keeper: B.S. Mathematics + Computer Science, Dean's List">
-</p>
+| Project | What it does | Technologies / context |
+|---|---|---|
+| [Illini SkillSwap](https://github.com/adhvikrayaprolu/uiuc-skillshare) | Helps UIUC students discover peers, share skills and exchange help requests. | React, TypeScript, Django REST |
+| [Swave](https://github.com/adhvikrayaprolu/swave) | Swipe-based music discovery with previews, preferences and playlists. | React, TypeScript, Django; CS222 team project |
+| GatherLink | Interest-group communities across related web and Android prototypes. | ClayHR software engineering internship |
+| ↳ [Web](https://github.com/adhvikrayaprolu/gather-link-web-app) | Browser-based groups, memberships and posts. | Java, Spring Boot, JSP, JPA |
+| ↳ [Android](https://github.com/adhvikrayaprolu/gather-link-mobile-app) | Native group communities backed by Firebase. | Java/XML, Firebase Auth, Firestore |
+| [Persistent Chatbot](https://github.com/adhvikrayaprolu/chatbot-app) | Isolated conversations, durable history, safe rendering and testable providers. | Flask, SQLite, vanilla JavaScript; evolved from ClayHR chatbot work |
 
-<img src="./assets/h-kit-bag.svg" width="100%" alt="Kit bag">
-<img src="./assets/kit-bag.svg" width="100%" alt="Tools: Python, JavaScript, Java, R, FastAPI, Django, PydanticAI, MCP, OpenAI API, RAG, React, Flask, PostgreSQL, Supabase, Firebase">
+Repository READMEs describe verified local workflows and current limitations. Engineering updates are reviewed through PRs; optional live integrations are not presented as deployed features.
 
-<img src="./assets/h-touchline.svg" width="100%" alt="Touchline">
-<p align="center">
-  <a href="https://linkedin.com/in/adhvik-rayaprolu-9a214b327"><img src="./assets/contact-linkedin.svg" width="32%" alt="LinkedIn"></a>
-  <a href="https://github.com/adhvikrayaprolu?tab=repositories"><img src="./assets/contact-github.svg" width="32%" alt="GitHub repositories"></a>
-</p>
+## AI and research
 
-<img src="./assets/full-time.svg" width="100%" alt="Full time. Thanks for scouting.">
+- **Gnani.ai / AstroGnani:** voice and chat backend work with FastAPI, PydanticAI and shared tool-calling workflows.
+- **NCSA SPIN:** ongoing work on LLM-assisted digital-health experiences, conversational support and activity tracking.
+- **Illinois Mathematics Lab:** sports outcomes and in-game NBA win-probability research.
+- **Zapp:** personal spending-intelligence prototype built with Django and React.
+
+These descriptions provide context without linking to excluded or unverified-access research repositories. RAG/document-upload experiments are not advertised as a production feature of the public chatbot.
+
+## Connect
+
+[LinkedIn](https://linkedin.com/in/adhvik-rayaprolu-9a214b327) · [GitHub](https://github.com/adhvikrayaprolu)
