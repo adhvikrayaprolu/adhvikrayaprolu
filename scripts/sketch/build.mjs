@@ -364,8 +364,8 @@ const wavy = (x0, y0, x1, y1, amp = 5, waves = 5) => {
   return { d: 'M' + pts.map((p) => p.map((v) => v.toFixed(1)).join(' ')).join(' L'), end: pts[60], prev: pts[57] };
 };
 [
-  [byId.zapp.x + 22, byId.zapp.y - 10, 1100, 392],
-  [byId.clay.x + 24, byId.clay.y - 6, 900, 488],
+  [byId.skillswap.x + 22, byId.skillswap.y - 10, 1100, 392],
+  [byId.gatherlink.x + 24, byId.gatherlink.y - 6, 900, 488],
 ].forEach(([a, b, c, d], i) => {
   const w = wavy(a, b, c, d);
   const delay = (3.4 + i * 0.4).toFixed(2);
