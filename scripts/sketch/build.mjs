@@ -51,7 +51,7 @@ const fontMarker = fs.readFileSync('marker.b64', 'utf8');
 let svg = [];
 svg.push(`<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
 <title id="t">Adhvik Rayaprolu — sketchbook scouting report</title>
-<desc id="d">A colored-pencil sketch of a football pitch and a FIFA-style player card. Adhvik's projects are drawn as players in a 1-2-3-2 formation, and a ball passes from UIUC through research and AI products into the goal.</desc>
+<desc id="d">A colored-pencil sketch of a football pitch and a FIFA-style player card. Adhvik's projects are drawn as players in a 1-2-3-2 formation, and a ball passes from UIUC through projects and research into the goal.</desc>
 <defs>
 <style>
 @font-face{font-family:'Hand';src:url(data:font/woff2;base64,${font700}) format('woff2');font-weight:700;}
@@ -294,19 +294,19 @@ svg.push(`</g>`);
 // ---------- players / lineup ----------
 const players = [
   { id: 'uiuc', n: 1, label: 'UIUC', x: 520, y: cy },
-  { id: 'svl', n: 4, label: 'Skill vs Luck', x: 628, y: 232 },
+  { id: 'zapp', n: 4, label: 'Zapp', x: 628, y: 232 },
   { id: 'chat', n: 5, label: 'Chatbot App', x: 628, y: 468 },
   { id: 'ncsa', n: 8, label: 'NCSA + IML', x: 772, y: 184 },
-  { id: 'astro', n: 10, label: 'AstroGnani', x: 810, y: cy },
-  { id: 'clay', n: 6, label: 'ClayHR', x: 772, y: 516 },
+  { id: 'swave', n: 10, label: 'Swave', x: 810, y: cy },
+  { id: 'gatherlink', n: 6, label: 'GatherLink', x: 772, y: 516 },
   { id: 'gnani', n: 9, label: 'Gnani.ai', x: 1000, y: 262 },
-  { id: 'zapp', n: 11, label: 'Zapp', x: 1000, y: 452 },
+  { id: 'skillswap', n: 11, label: 'SkillSwap', x: 1000, y: 452 },
 ];
 const byId = Object.fromEntries(players.map((p) => [p.id, p]));
 
-// passing move: UIUC -> Skill vs Luck -> NCSA -> AstroGnani -> Gnani.ai -> goal
+// passing move: UIUC -> Zapp -> NCSA -> Swave -> Gnani.ai -> goal
 const goal = { x: P.x1 + 6, y: cy - 6 };
-const route = ['uiuc', 'svl', 'ncsa', 'astro', 'gnani'].map((k) => byId[k]).concat([goal]);
+const route = ['uiuc', 'zapp', 'ncsa', 'swave', 'gnani'].map((k) => byId[k]).concat([goal]);
 const legs = [];
 for (let i = 0; i < route.length - 1; i++) {
   const a = route[i],
@@ -441,7 +441,7 @@ ${text(1058, 206, 'GOAL!', { font: 'Marker', size: 38, fill: C.red, weight: 400,
 svg.push(text(470, 76, 'the game plan', { font: 'Marker', size: 34, weight: 400, rotate: -1.5 }));
 svg.push(`<g filter="url(#softPencil)">${draw(gen.curve([[472, 86], [560, 90], [690, 84]], o({ stroke: C.red, strokeWidth: 2, roughness: 1.2 })))}</g>`);
 svg.push(text(1170, 72, 'projects linked below ↓', { size: 25, fill: C.blue, anchor: 'end', rotate: 1.5 }));
-svg.push(text(466, 640, 'formation 1-2-3-2 · every player is a real project', { size: 23, fill: C.graphiteSoft, rotate: -0.6 }));
+svg.push(text(466, 640, 'formation 1-2-3-2 · projects, research + experience', { size: 23, fill: C.graphiteSoft, rotate: -0.6 }));
 
 svg.push(`</svg>`);
 fs.mkdirSync('../../assets', { recursive: true });

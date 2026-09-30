@@ -14,12 +14,12 @@ import { gen, o, C, draw, text, wrap, head, hatch, save } from './lib.mjs';
 
   const intro = "I'm a Math + CS student at UIUC building AI systems, full-stack products and research tools.";
   wrap(intro, 27, 640).forEach((l, i) => (s += text(90, 52 + i * 34, l, { size: 27 })));
-  s += text(90, 120, 'I turn messy real-world problems into software people actually use.', { size: 25, fill: C.soft });
+  s += text(90, 120, 'Backend systems, full-stack applications and research.', { size: 25, fill: C.soft });
 
   const rows = [
-    ['Plays as:', 'creative attacking mid. Builds the agent, wires the backend, ships it.'],
-    ['Academy:', "UIUC, B.S. Mathematics + Computer Science, Dean's List"],
-    ['Training on:', 'voice + chat agents, RAG and tool-calling, sports analytics'],
+    ['Plays as:', 'creative attacking mid — backend and full-stack engineering.'],
+    ['Academy:', "UIUC, Math + CS undergraduate, Dean's List"],
+    ['Training on:', 'voice + chat systems, digital health, sports analytics'],
   ];
   rows.forEach(([k, v], i) => {
     const y = 190 + i * 40;
@@ -32,23 +32,23 @@ import { gen, o, C, draw, text, wrap, head, hatch, save } from './lib.mjs';
   s += `<g transform="rotate(-12 812 104)">`;
   s += draw(gen.circle(812, 104, 118, o({ stroke: C.red, strokeWidth: 2.2, roughness: 1.4 })));
   s += draw(gen.circle(812, 104, 102, o({ stroke: C.red, strokeWidth: 1.2, roughness: 1.6 })));
-  s += text(812, 88, "COACH'S", { font: 'Marker', size: 16, fill: C.red, anchor: 'middle' });
-  s += text(812, 115, 'SIGN HIM', { font: 'Marker', size: 18, fill: C.red, anchor: 'middle' });
-  s += text(812, 138, '★ ★ ★ ★ ★', { size: 18, fill: C.red, anchor: 'middle' });
+  s += text(812, 88, "PLAYER", { font: 'Marker', size: 16, fill: C.red, anchor: 'middle' });
+  s += text(812, 115, 'PROFILE', { font: 'Marker', size: 18, fill: C.red, anchor: 'middle' });
+  s += text(812, 138, 'UIUC', { size: 18, fill: C.red, anchor: 'middle' });
   s += `</g>`;
   save('scouting-report.svg', s);
 }
 
 // ---------- squad cards (one image per player so each can be its own link) ----------
 const squad = [
-  ['squad-gnani', 9, 'Gnani.ai', 'Striker', 'Voice and chat agent backends with streaming speech-to-text and TTS.', ['FastAPI', 'PydanticAI', 'MCP', 'Postgres'], true],
-  ['squad-zapp', 11, 'Zapp', 'Winger', 'Spending intelligence: scores what your subscriptions are actually worth.', ['Django', 'React', 'Supabase', 'ML'], true],
-  ['squad-astrognani', 10, 'AstroGnani', 'Playmaker', 'Live B2C AI astrology platform with streaming voice and chat agents.', ['Python', 'FastAPI', 'PydanticAI'], true],
-  ['squad-ncsa', 8, 'NCSA + IML', 'Box-to-box', 'LLM architecture, RAG + tool-calling workflows, and sports analytics research.', ['Python', 'LLMs', 'RAG'], true],
-  ['squad-clayhr', 6, 'ClayHR', 'Holding mid', 'HR chatbot and community applications.', ['Flask', 'OpenAI', 'Firebase'], true],
-  ['squad-skillvsluck', 4, 'Skill vs Luck', 'Centre-back', 'Modeling 20+ years of European soccer outcomes: how much is skill?', ['Python', 'R'], true],
-  ['squad-chatbot', 5, 'Chatbot App', 'Centre-back', 'HR-focused chatbot with persistent conversations and RAG document upload.', ['Flask', 'OpenAI API'], true],
-  ['squad-uiuc', 1, 'UIUC', 'Keeper · the foundation', "B.S. Mathematics + Computer Science. Dean's List.", ['Math', 'CS'], false],
+  ['squad-gnani', 9, 'Gnani.ai', 'Striker', 'AstroGnani voice and chat backends with shared tool-calling.', ['FastAPI', 'PydanticAI', 'Postgres'], false],
+  ['squad-skillswap', 11, 'Illini SkillSwap', 'Winger', 'UIUC peer discovery, skill profiles and help requests.', ['React', 'TypeScript', 'Django'], true],
+  ['squad-swave', 10, 'Swave', 'Playmaker', 'CS222 music discovery: swipe, like/pass and playlists.', ['React', 'Django', 'iTunes'], true],
+  ['squad-ncsa', 8, 'NCSA + IML', 'Box-to-box', 'NCSA: digital-health AI. IML: sports outcomes research.', ['Python', 'LLMs', 'Research'], false],
+  ['squad-gatherlink', 6, 'GatherLink', 'Holding mid', 'ClayHR internship: interest groups on web and Android.', ['Spring', 'Java', 'Firebase'], true],
+  ['squad-zapp', 4, 'Zapp', 'Centre-back', 'Personal spending intelligence prototype.', ['Django', 'React', 'Supabase'], false],
+  ['squad-chatbot', 5, 'Chatbot App', 'Centre-back', 'ClayHR origins; persistent isolated chats and safe rendering.', ['Flask', 'SQLite', 'OpenAI'], true],
+  ['squad-uiuc', 1, 'UIUC', 'Keeper · the foundation', "Math + CS undergraduate. Dean's List.", ['Math', 'CS'], false],
 ];
 const tagColors = [C.gold, C.pink, C.sky, C.grass];
 squad.forEach(([file, n, name, pos, desc, tags, linked], idx) => {
