@@ -22,7 +22,7 @@ Repository READMEs describe verified local workflows and current limitations. En
 - **Illinois Mathematics Lab:** sports outcomes and in-game NBA win-probability research.
 - **Zapp:** personal spending-intelligence prototype built with Django and React.
 
-These descriptions provide context without linking to excluded or unverified-access research repositories. RAG/document-upload experiments are not advertised as a production feature of the public chatbot.
+Some research and internship work is described here without a public code link.
 
 ## Connect
 
